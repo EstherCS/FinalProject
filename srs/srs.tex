@@ -27,6 +27,8 @@
 \usepackage{diagbox}
 \usepackage[english]{babel}
 \usepackage{CJKutf8}
+\usepackage{cite}
+\usepackage{indentfirst} %首行縮排
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -112,11 +114,11 @@
         \hline
     \end{tabular}
 \end{center}
-\chapter{作品介紹}
+\chapter{產品介紹}
 
 \section{目的}
 
-$~~~~$現代人工作忙碌、生活步調快，容易產生緊張、焦慮等非正向情緒。研究顯示長久處於負面情緒，可能造成身體器官的損壞，而罹患某些疾病，例如：癌症、憂鬱症和躁鬱症等。為了解決此問題，本團隊提出一基於即時情緒分析之心靈陪伴系統，透過攝影機，拍攝病人臉部影像，並快速辨識使用者是否處於極端負面的情緒。同時，即時線上搜尋改善病人當下情緒的音樂播放，並且以語音方式播放可以緩和情緒的心靈小語，藉此使病人心靈得到安慰。除此之外，本作品也提供心靈陪伴分析平台，讓使用者可以查看過去所有負面情緒的累積統計圖，以及負面情緒可能導致的相關疾病，去做提醒跟建議。
+現代人工作忙碌、生活步調快，容易產生緊張、焦慮等非正向情緒。研究顯示長久處於負面情緒，可能造成身體器官的損壞，而罹患某些疾病，例如：癌症、憂鬱症和躁鬱症等。為了解決此問題，本團隊提出一基於即時情緒分析之心靈陪伴系統，透過攝影機，拍攝病人臉部影像，並快速辨識使用者是否處於極端負面的情緒。同時，即時線上搜尋改善病人當下情緒的音樂播放，並且以語音方式播放可以緩和情緒的心靈小語，藉此使病人心靈得到安慰。除此之外，本產品也提供心靈陪伴分析平台，讓使用者可以查看過去所有負面情緒的累積統計圖，以及負面情緒可能導致的相關疾病，去做提醒跟建議。
 
 另外，在心靈陪伴分析平台中，也提供使用者留言板，我們會根據病人的留言內容，去做客製化的分析，針對病人的問題去修改回應內容，使回應能更符合病人的需要。況且，這些內容是不會對外公開的，病人不須擔心隱私被洩露。
 
@@ -135,22 +137,30 @@ is to have its own priority.$>$
 %overview sections and proceeding through the sections that are most pertinent to 
 %each reader type.$>$
 
-$~~~~$本SRS文件提供給使用者、開發團隊與維護人員閱讀，使用者透過閱讀本文件，了解產品以及操作說明，開發團隊進行系統開發時的依據，與維護人員日後維護系統時的參考文件。 \\
+本SRS文件提供給使用者、開發團隊與維護人員閱讀，使用者透過閱讀本文件，了解產品以及操作說明，開發團隊進行系統開發時的依據，與維護人員日後維護系統時的參考文件。 \\
 
 \section{計畫範圍}
+與其他章節有所重複，請參考文件1.1。
 %$<$Provide a short description of the software being specified and its purpose, 
 %including relevant benefits, objectives, and goals. Relate the software to 
 %corporate goals or business strategies. If a separate vision and scope document 
 %is available, refer to it rather than duplicating its contents here.$>$
 
-$~~~~$此文件的範圍是針對「心靈陪伴分析」之軟體需求規格，包括系統前端(Client端)及系統後端(Server端)的相關架構與功能。
+%此文件的範圍是針對「心靈陪伴分析」之軟體需求規格，包括系統前端(Client端)及系統後端(Server端)的相關架構與功能。
 
 \section{參考資料}
-$<$List any other documents or Web addresses to which this SRS refers. These may 
-include user interface style guides, contracts, standards, system requirements 
-specifications, use case documents, or a vision and scope document. Provide 
-enough information so that the reader could access a copy of each reference, 
-including title, author, version number, date, and source or location.$>$
+\begin{itemize}
+\item{http://big5.gov.cn/gate/big5/www.gov.cn/fwxx/kp/2008-01/17/content_861306.htm}
+
+\item{https://www.cw.com.tw/article/article.action?id=5081933}
+
+\item{http://www.alternative-cancer-care.com/cancer-anger-link.html}
+
+\item{https://www.cancer.gov/about-cancer/coping/feelings/stress-fact-sheet}
+
+\item{https://newsinhealth.nih.gov/2015/08/positive-emotions-your-health}
+\end{itemize}
+%$<$List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.$>$
 
 
 \chapter{總體描述}
@@ -172,17 +182,11 @@ interfaces can be helpful.$>$
 %understandable to any reader of the SRS. A picture of the major groups of 
 %related requirements and how they relate, such as a top level data flow diagram 
 %or object class diagram, is often effective.$>$
-
-$~~~$本系統主要是針對病人去做情緒偵測，並且當下立即利用播放音樂、回應話去舒緩病人的負面情緒，每一次的情緒都會儲存在後端的database裡面，病人可以透過我們心靈陪伴分析平台網頁，去了解自己每天的情緒和全部的情緒統計，搭配貼心小建議可以更清楚需要注意的身體狀況。另外，我們還設置留言板供用戶可以抒發或者分享自己的心情，所有內容一律保密，不會外流，請用戶放心。
+本系統主要是針對病人去做情緒偵測，並且當下立即利用播放音樂、回應話去舒緩病人的負面情緒，每一次的情緒都會儲存在後端的database裡面，病人可以透過我們心靈陪伴分析平台網頁，去了解自己每天的情緒和全部的情緒統計，搭配貼心小建議可以更清楚需要注意的身體狀況。另外，我們還設置留言板供用戶可以抒發或者分享自己的心情，所有內容一律保密，不會外流，請用戶放心。
 
 \section{用戶類別和特質}
-$<$Identify the various user classes that you anticipate will use this product.  
-User classes may be differentiated based on frequency of use, subset of product 
-functions used, technical expertise, security or privilege levels, educational 
-level, or experience. Describe the pertinent characteristics of each user class.  
-Certain requirements may pertain only to certain user classes. Distinguish the 
-most important user classes for this product from those who are less important 
-to satisfy.$>$
+我們的系統用戶，針對正在接受治療的病人，如︰憂鬱症、癌症等，利用攝影機拍攝病人的臉部影像，辨識是否處於非正向情緒，如︰焦慮、憤怒等，播放語音回應及線上音樂，緩和病人情緒，並且可利用心靈陪伴分析平台網頁，網頁中提供病人的情緒數據、建議事項及心情留言板，藉此了解、調適個人心理狀態，輔助病人情緒達到穩定，使病情能更快速康復。
+%$<$Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class.  Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.$>$
 
 \section{操作環境}
 %$<$Describe the environment in which the software will operate, including the 
@@ -207,6 +211,7 @@ youtube_dl、lxml、ffmpeg\end{bfseries}}%%網頁端要加
 \end{itemize}
 
 \section{設計和實作上的限制}
+資料庫來源缺乏東方臉孔的數據。
 $<$Describe any items or issues that will limit the options available to the 
 developers. These might include: corporate or regulatory policies; hardware 
 limitations (timing requirements, memory requirements); interfaces to other 
@@ -244,27 +249,39 @@ example, in the vision and scope document or the project plan).$>$
 %the user interface design should be documented in a separate user interface 
 %specification.$>$
 
-$~~$在偵測完使用者的情緒後，我們透過網頁的形式，呈現情緒數據圖表提供給病人參考，如圖\ref{fig:UserInterface}所示。
+我們將使用者介面分為兩個部份，包含︰情緒偵測介面及心靈分析平台介面，概述如下︰
+
+在偵測使用者情緒時，我們利用電腦視窗的形式，顯示使用者臉部影像，呈現臉部偵測、偵測結果及臉部辨識後的情緒分析數據，如圖\ref{fig:UserInterface-1}所示。
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{./figs/DetectResult-2.pdf}
+\end{center}
+\caption{情緒偵測介面說明圖。}
+\label{fig:UserInterface-1}
+\end{figure}
+
+在偵測完使用者的情緒後，我們透過網頁的形式，呈現情緒數據的直方圖，提供給病人查看，另外，網頁下方也提供貼心小建議與留言板，提醒病人注意心理狀態，以及讓病人留言抒發情緒，如圖\ref{fig:UserInterface-2}所示。
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=1\textwidth]{./figs/Web.pdf}
 \end{center}
-\caption{使用者介面說明圖。}
-\label{fig:UserInterface}
+\caption{心靈分析平台介面說明圖。}
+\label{fig:UserInterface-2}
 \end{figure}
 
 
 
 \section{硬體界面}
-$<$Describe the logical and physical characteristics of each interface between 
-the software product and the hardware components of the system. This may include 
-the supported device types, the nature of the data and control interactions 
-between the software and the hardware, and communication protocols to be 
-used.$>$
-
-硬體線路圖, 腳位, 訊號等資訊. 最好用Bloack diagram 的方式描述.
-另外如能加上耗電量, 效能等資訊更好.
+本產品包含USB2.0外接攝影鏡頭、藍芽喇叭及音源線，將攝影鏡頭及藍芽喇叭分別插入電腦USB孔及音源孔，即可使用。另外，筆電本身含有攝影鏡頭的，則可不必在外接攝影鏡頭，如圖\ref{fig:hardInterface}。
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/hardware.pdf}
+\end{center}
+\caption{硬體介面說明圖。}
+\label{fig:hardInterface}
+\end{figure}
+%$<$Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.$>$硬體線路圖, 腳位, 訊號等資訊. 最好用Bloack diagram 的方式描述另外如能加上耗電量, 效能等資訊更好.
 
 \section{軟體界面}
 $<$Describe the connections between this product and other specific software 
@@ -290,12 +307,12 @@ transfer rates, and synchronization mechanisms.$>$
 
 \chapter{系統功能}
 
-$~~~$根據國內〈科學發展〉期刊的相關研究發現，音樂可以產生催產素，以減低焦慮與恐懼，有效改善情緒，因此，本系統：基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制，本專案系統主要分為兩部份，分別為使用者端和伺服器端，使用者端為情緒偵測演算法及情緒緩和機制，伺服器端則為雲端心靈陪伴分析整合平台，如圖\ref{fig:framework}，概略說明如下：
+根據國內〈科學發展〉期刊的相關研究發現，音樂可以產生催產素，以減低焦慮與恐懼，有效改善情緒，因此，本系統：基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制，本專案系統主要分為兩部份，分別為使用者端和伺服器端，使用者端為情緒偵測演算法及情緒緩和機制，伺服器端則為雲端心靈陪伴分析整合平台，如圖\ref{fig:framework}，概略說明如下：
 
 %%%%圖要改
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=1\textwidth]{./figs/framework.pdf}
+\includegraphics[width=1\textwidth]{./figs/framework-version2.pdf}
 \end{center}
 \caption{非接觸式準確且即時駕駛情緒偵測演算法架構圖。}
 \label{fig:framework}
@@ -305,41 +322,21 @@ $~~~$根據國內〈科學發展〉期刊的相關研究發現，音樂可以產
 
 \subsection{功能敘述和優先級}
 
+
 \begin{itemize}
 \item{\begin{bfseries}{情緒偵測演算法：}\end{bfseries}}
 
-$~~~$我們為避免病人因極端負面情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
+我們為避免病人因極端負面情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
 
-\end{itemize}
+\item{\begin{bfseries}{情緒緩和機制：}\end{bfseries}}
 
-\subsection{刺激/反應序列}
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
-
-\subsection{功能性需求}
-
-\begin{center}  
-\begin{tabular}{|l| p{10cm}|}  
-\hline  
-功能性需求 & 功能性需求描述   \\ \hline  
-情緒辨識 &以本系統介面偵測病人臉部表情，偵測7種表情，包含6種非正向情緒，如︰憂鬱、悲傷、憤怒、面無表情、厭惡、驚嚇等，及1種正向情緒，如︰開心。    \\ \hline  
-
-\end{tabular}  
-\end{center}  
-
-\section{專業的緩和機制}
-
-\subsection{功能敘述和優先級}
-
-$~~~$透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因極端負面情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。\\
-
+透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因極端負面情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
 \begin{itemize}
-\item[(Ⅰ)]{\begin{bfseries}{搜索文字：}\end{bfseries}}
+\item[(a)]{\begin{bfseries}{搜索文字：}\end{bfseries}}
 
-當抓取到病人情緒後，我們隨機搜索一組預先設定的回應文字，如表\ref{lab:searchtext}所示，利用語音播放，回應正向語句，鼓勵病人。\\
+如圖\ref{fig:FrameworkFirstAndSecond}右半部(a)，當抓取到病人情緒後，我們隨機搜索一組預先設定的回應文字，如表\ref{lab:searchtext}所示，利用語音播放，回應正向語句，鼓勵病人。\\
 
-\renewcommand{\arraystretch}{1.2} 
+\renewcommand{\arraystretch}{1.0} 
 \renewcommand{\multirowsetup}{\centering}
 
 \begin{table}[h]
@@ -360,11 +357,11 @@ $~~~$透過情緒偵測演算法，得出的病人情緒後，即時抓取能有
 \label{lab:searchtext}
 \end{table}
 
-\item[(Ⅱ)]{\begin{bfseries}{關鍵字合成：}\end{bfseries}}
+\item[(b)]{\begin{bfseries}{關鍵字合成：}\end{bfseries}}
 
-我們根據設定的查找表(Lookup Table)來合成網路爬蟲關鍵字，如表\ref{lab:2}所示（放關鍵字合成的表）。其中，如果是偵測到病人的情緒為「憤怒」，會查找到可能的關鍵字有「古典樂放鬆」、「古典樂輕快」、「流行歌輕快」等，以找尋放鬆、輕快的音訊資料，如圖\ref{fig:framework}右半部(b)所示。\\
+我們根據設定的查找表(Lookup Table)來合成網路爬蟲關鍵字，如表\ref{lab:2}所示（放關鍵字合成的表）。其中，如果是偵測到病人的情緒為「憤怒」，會查找到可能的關鍵字有「古典樂放鬆」、「古典樂輕快」、「流行歌輕快」等，以找尋放鬆、輕快的音訊資料，如圖\ref{fig:FrameworkFirstAndSecond}右半部(b)所示。\\
 
-\renewcommand{\arraystretch}{1.2} 
+\renewcommand{\arraystretch}{1.0} 
 \renewcommand{\multirowsetup}{\centering}
 \begin{table}[h]
 \caption{關鍵字合成表}
@@ -384,21 +381,30 @@ $~~~$透過情緒偵測演算法，得出的病人情緒後，即時抓取能有
 \label{lab:2}
 \end{table}
 
-\item[(Ⅲ)]{\begin{bfseries}{網路爬蟲：}\end{bfseries}}
+\item[(c)]{\begin{bfseries}{網路爬蟲：}\end{bfseries}}
 
-利用關鍵字合成，使用網路爬蟲，抓取有效改善病人當下情緒的音樂，我們採用HTTP Request技術，以及requests、urllib2、 BeautifulSoup 、lxml、 youtube-dl等軟體開發套件，根據上述的關鍵字檢索結果，從網絡上抓取最新最即時的音訊資料，如圖\ref{fig:framework}右半部(c)所示。\\
+利用關鍵字合成，使用網路爬蟲，抓取有效改善病人當下情緒的音樂，我們採用HTTP Request技術，以及requests、urllib2、 BeautifulSoup 、lxml、 youtube-dl等軟體開發套件，根據上述的關鍵字檢索結果，從網絡上抓取最新最即時的音訊資料，如圖\ref{fig:FrameworkFirstAndSecond}右半部(c)所示。\\
 
-\item[(Ⅳ)]{\begin{bfseries}{音訊生成：}\end{bfseries}}
+\item[(d)]{\begin{bfseries}{音訊生成：}\end{bfseries}}
 
-當我們抓取到音訊資料後，通過Python的Requests及 BeautifulSoup技術，來下載檔案，使音訊生成，如圖\ref{fig:framework}右半部(d)所示。\\
+當我們抓取到音訊資料後，通過Python的Requests及 BeautifulSoup技術，來下載檔案，使音訊生成，如圖\ref{fig:FrameworkFirstAndSecond}右半部(d)所示。\\
 
-\item[(Ⅴ)]{\begin{bfseries}{音樂播放：}\end{bfseries}}
+\item[(e)]{\begin{bfseries}{音樂播放：}\end{bfseries}}
 
-當我們生成音訊資料後，使用omxplayer套件，將音訊播放給病人收聽，改善病人當下的情緒，如圖\ref{fig:framework}右半部(e)所示。\\
+當我們生成音訊資料後，使用omxplayer套件，將音訊播放給病人收聽，改善病人當下的情緒，如圖\ref{fig:FrameworkFirstAndSecond}右半部(e)所示。\\
 
 根據以上五個步驟，即可完成情緒緩和機制，藉此避免病人因極端負面情緒，導致影響病情，賦予病人積極、正面的動力。\\
 
 \end{itemize}
+\end{itemize}
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/FrameworkFirstAndSecond.pdf}
+\end{center}
+\caption{使用者端︰情緒偵測演算法與情緒緩和機制架構圖。}
+\label{fig:FrameworkFirstAndSecond}
+\end{figure}
 
 \subsection{刺激/反應序列}
 $<$List the sequences of user actions and system responses that stimulate the 
@@ -411,6 +417,8 @@ associated with use cases.$>$
 \begin{tabular}{|l| p{10cm}|}  
 \hline  
 功能性需求 & 功能性需求描述   \\ \hline  
+情緒辨識 &以本系統介面偵測病人臉部表情，偵測7種表情，包含6種非正向情緒，如︰憂鬱、悲傷、憤怒、面無表情、厭惡、驚嚇等，及1種正向情緒，如︰開心。    \\ \hline  
+搜索文字& 好的\\\hline
 關鍵字合成 & 抓取到病人情緒後，根據設定的查閱表資料表，合成網路爬蟲關鍵字。例如：偵測到病人的情緒為憤怒，會查找到可的關鍵字有..「古典樂放鬆」、「古典樂輕快」、「流行歌輕快」等，以找尋放鬆、輕快的音訊資料    \\ \hline  
 網路爬蟲 & 利用情緒關鍵字，抓取有效改善病人當下情緒的音樂 \\ \hline
 音訊生成 & 抓取音訊資料後下載檔案，使音訊生成 \\ \hline
@@ -418,6 +426,7 @@ associated with use cases.$>$
 
 \end{tabular}  
 \end{center}  
+
 
 \section{後端平台做分析追蹤}
 $<$Don’t really say “System Feature 1.” State the feature name in just a few 
@@ -495,24 +504,26 @@ security or privacy certifications that must be satisfied.$>$
 
 基於上述兩種穩定情緒方法仍有不足之處，因此，我們提出本系統：基於即時情緒分析之心靈陪伴系統，使用深度學習產生訓練模型，將訓練資料進行情緒特徵抽取，再利用訓練完成的模型偵測病人情緒，獲得改善情緒之關鍵字，即時播放緩和情緒之音樂及心靈小語，舒緩病人負面情緒。本系統具有以下三點特性：
 \begin{itemize}
-\item[1.]{ 即時性：}在產生負面情緒的當下立刻使用本系統，系統可以立即偵測病人的情緒，並且針對此情緒去做適當的回饋，而非像上述方法還需要事先預約，致使情緒不能立即紓解。
+\item[1.]{專業性：}我們每個回饋、音樂，都是根據研究和專家證實過可以緩和情緒的回應，所以和親朋好友相比，此系統帶給病人情緒上的緩解是更立即且實用的。
 
-\item[2.]{重複使用性：}上述提到，諮詢是尋求專業人士的協助，價格昂貴，導致可能久久才能諮詢一次。而使用此系統完全不會有這個問題，負面情緒產生時，直接打開系統就可以使用，不會限制次數，也沒有價錢上的開銷。
 
-\item[3.] {專業性：}我們每個回饋、音樂，都是根據研究和專家證實過可以緩和情緒的回應，所以和親朋好友相比，此系統帶給病人情緒上的緩解是更立即且實用的。
+\item[2.]{ 即時性：}在產生負面情緒的當下立刻使用本系統，系統可以立即偵測病人的情緒，並且針對此情緒去做適當的回饋，而非像上述方法還需要事先預約，致使情緒不能立即紓解。
+
+
+\item[3.] {後續追蹤：}上述提到，諮詢是尋求專業人士的協助，價格昂貴，導致可能久久才能諮詢一次。而使用此系統完全不會有這個問題，負面情緒產生時，直接打開系統就可以使用，不會限制次數，也沒有價錢上的開銷。
 \end{itemize}
 
-搭配下表\ref{lab:1}，可以看出我們的系統同時擁有即時性、重複使用性和專業性，相較其他兩個穩定情緒的方法我們系統不必花費高昂金額，尋求心理諮商師協助，也不會因顧及面子問題而無法暢所欲言，即可立即且有效緩和情緒。\\
+搭配表\ref{lab:1}，可以看出我們的系統同時擁有專業性、即時性和後續追蹤，相較其他兩個穩定情緒的方法我們系統不必花費高昂金額，尋求心理諮商師協助，也不會因顧及面子問題而無法暢所欲言，即可立即且有效緩和情緒。\\
 
 \renewcommand{\arraystretch}{1.3} % 將表格行間距加大為原來的 1.2 倍
 \begin{table}[!h]    
 \centering
      \caption{各類穩定情緒方法之比較}
-	\resizebox{0.48\textwidth}{!}{
+ \resizebox{0.48\textwidth}{!}{
  \begin{tabular}{|c|c|c|c|}\hline
-	\diagbox[width=14em]{方法}{特性}	& 重複使用性	& 即時性	  & 專業性   	 \\\hline
-    心理諮詢師			& ×  		& × 	& ○	       \\\hline
-    親朋好友   			& ○  		& ○ 	& ×      \\\hline
+ \diagbox[width=14em]{方法}{特性} & 專業性 & 即時性   &後續追蹤      \\\hline
+    心理諮詢師   &○      & ×  & ×      \\\hline
+    親朋好友      & ×    & ○  & Δ      \\\hline
     本系統                       & ○             & ○       & ○        \\\hline
     \end{tabular}}
 \label{lab:1}
