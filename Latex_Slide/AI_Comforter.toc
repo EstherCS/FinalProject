@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{背景介紹}{3}{0}{1}
-\beamer@sectionintoc {2}{創新\&創意}{7}{0}{2}
-\beamer@sectionintoc {3}{作品介紹}{13}{0}{3}
-\beamer@sectionintoc {4}{實機測試}{33}{0}{4}
-\beamer@sectionintoc {5}{總結}{36}{0}{5}
