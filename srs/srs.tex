@@ -122,12 +122,12 @@
 
 另外，在心靈陪伴分析平台中，也提供使用者留言板，我們會根據病人的留言內容，去做客製化的分析，針對病人的問題去修改回應內容，使回應能更符合病人的需要。況且，這些內容是不會對外公開的，病人不須擔心隱私被洩露。
 
-\section{文件公約} %應該不用寫
-$<$Describe any standards or typographical conventions that were followed when 
-writing this SRS, such as fonts or highlighting that have special significance.  
-For example, state whether priorities  for higher-level requirements are assumed 
-to be inherited by detailed requirements, or whether every requirement statement 
-is to have its own priority.$>$
+%\section{文件公約} %應該不用寫
+%$<$Describe any standards or typographical conventions that were followed when 
+%writing this SRS, such as fonts or highlighting that have special significance.  
+%For example, state whether priorities  for higher-level requirements are assumed 
+%to be inherited by detailed requirements, or whether every requirement statement 
+%is to have its own priority.$>$
 
 \section{預期讀者和閱讀建議}
 %$<$ Describe the different types of reader that the document is intended for, 
@@ -137,7 +137,7 @@ is to have its own priority.$>$
 %overview sections and proceeding through the sections that are most pertinent to 
 %each reader type.$>$
 
-本SRS文件提供給使用者、開發團隊與維護人員閱讀，使用者透過閱讀本文件，了解產品以及操作說明，開發團隊進行系統開發時的依據，與維護人員日後維護系統時的參考文件。 \\
+本SRS文件提供給使用者、開發團隊與維護人員閱讀，使用者透過閱讀本文件，了解產品以及操作說明，開發團隊進行系統開發時的依據，與維護人員日後維護系統時的參考文件。
 
 \section{計畫範圍}
 與其他章節有所重複，請參考文件1.1。
@@ -198,14 +198,13 @@ interfaces can be helpful.$>$
 \item[(1)]{\begin{bfseries}{操作系統：}Windows 10\end{bfseries}}
 \item[(2)]{\begin{bfseries}{程式撰寫平台：}Pycharm 2016.3.2\end{bfseries}}
 \item[(3)]{\begin{bfseries}{操作環境：}Python3.5.0 以上\end{bfseries}}
-\item[(4)]{\begin{bfseries}{使用套件：}NumPy、OpenCV、Tensorflow、Keras、BeautifulSoup、\\
-youtube_dl、lxml、ffmpeg\end{bfseries}}%%網頁端要加
+%%網頁端要加
 \end{itemize}
 
 \subsection{硬體需求}
 \begin{itemize}
-\item[(1)]{\begin{bfseries}{音響：}具備藍芽功能\end{bfseries}}
-\item[(2)]{\begin{bfseries}{攝影機：}一個\end{bfseries}}
+\item[(1)]{\begin{bfseries}{音響：}外接藍芽喇叭或電腦內建喇叭\end{bfseries}}
+\item[(2)]{\begin{bfseries}{攝影鏡頭：}USB2.0外接攝影鏡頭或電腦內建鏡頭\end{bfseries}}
 \item[(3)]{\begin{bfseries}{網路：}無線網路卡或手機 wifi\end{bfseries}}
 
 \end{itemize}
@@ -215,11 +214,13 @@ youtube_dl、lxml、ffmpeg\end{bfseries}}%%網頁端要加
 %$<$Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).$>$
 
 \section{用戶文件}
-$<$List the user documentation components (such as user manuals, on-line help, 
-and tutorials) that will be delivered along with the software. Identify any 
-known user documentation delivery formats or standards.$>$
+用戶文件與資訊，請參閱本文件的第3部份，界面規格設計。
+%$<$List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.$>$
 \section{系統假設和依賴}
-本產品XXXXX，有使用XXX技術，因此當XXXXX第三方停止時，我們的程式可能XXX中斷
+
+本產品使用的套件包含：NumPy、OpenCV、Tensorflow、Keras、BeautifulSoup、
+youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第三方套件停止服務時，我們的程式將無法運行。
+
 %$<$List any assumed factors (as opposed to known facts) that could affect the 
 %requirements stated in the SRS. These could include third-party or commercial 
 %components that you plan to use, issues around the development or operating 
@@ -422,13 +423,11 @@ associated with use cases.$>$
 
 
 \section{伺服器端}
-$<$Don’t really say “System Feature 1.” State the feature name in just a few 
-words.$>$
 
 \subsection{後端平台做分析追蹤}
 \begin{itemize}
 \item{\begin{bfseries}{雲端心靈陪伴分析整合平台：}\end{bfseries}}
-透過即時分析情緒及情緒緩和過後，我們導入分析後的非正向情緒類別，設計一雲端心靈陪伴分析整合平台，如圖X所示，以提供視覺化情緒統計的服務。如此一來，病人能透過網頁，查詢自己的歷史狀況，以及分析統計結果；查詢自己常處於哪類的非正向情緒...........。
+透過即時分析情緒及情緒緩和過後，我們導入分析後的非正向情緒類別，設計一雲端心靈陪伴分析整合平台，如圖\ref{fig:webframework}所示，以提供視覺化情緒統計的服務。如此一來，病人能透過網頁，查詢自己的歷史狀況，以及分析統計結果；查詢自己常處於哪類的非正向情緒...........。
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=1\textwidth]{./figs/Web.pdf}
