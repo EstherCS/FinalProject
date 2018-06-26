@@ -118,7 +118,7 @@
 
 \section{目的}
 
-現代人工作忙碌、生活步調快，容易產生緊張、焦慮等非正向情緒。研究顯示長久處於負面情緒，可能造成身體器官的損壞，而罹患某些疾病，例如：癌症、憂鬱症和躁鬱症等。為了解決此問題，本團隊提出一基於即時情緒分析之心靈陪伴系統，透過攝影機，拍攝病人臉部影像，並快速辨識使用者是否處於極端負面的情緒。同時，即時線上搜尋改善病人當下情緒的音樂播放，並且以語音方式播放可以緩和情緒的心靈小語，藉此使病人心靈得到安慰。除此之外，本產品也提供心靈陪伴分析平台，讓使用者可以查看過去所有負面情緒的累積統計圖，以及負面情緒可能導致的相關疾病，去做提醒跟建議。
+現代人工作忙碌、生活步調快，容易產生緊張、焦慮等非正向情緒。研究顯示長久處於非正向情緒，可能造成身體器官的損壞，而罹患某些疾病，例如：癌症、憂鬱症和躁鬱症等。為了解決此問題，本團隊提出一基於即時情緒分析之心靈陪伴系統，透過攝影機，拍攝病人臉部影像，並快速辨識使用者是否處於非正向的情緒。同時，即時線上搜尋改善病人當下情緒的音樂播放，並且以語音方式播放可以緩和情緒的心靈小語，藉此使病人心靈得到安慰。除此之外，本產品也提供心靈陪伴分析平台，讓使用者可以查看過去所有非正向情緒的累積統計圖，以及非正向情緒可能導致的相關疾病，去做提醒跟建議。
 
 另外，在心靈陪伴分析平台中，也提供使用者留言板，我們會根據病人的留言內容，去做客製化的分析，針對病人的問題去修改回應內容，使回應能更符合病人的需要。況且，這些內容是不會對外公開的，病人不須擔心隱私被洩露。
 
@@ -182,7 +182,7 @@ interfaces can be helpful.$>$
 %understandable to any reader of the SRS. A picture of the major groups of 
 %related requirements and how they relate, such as a top level data flow diagram 
 %or object class diagram, is often effective.$>$
-本系統主要是針對病人去做情緒偵測，並且當下立即利用播放音樂、回應話去舒緩病人的負面情緒，每一次的情緒都會儲存在後端的database裡面，病人可以透過我們心靈陪伴分析平台網頁，去了解自己每天的情緒和全部的情緒統計，搭配貼心小建議可以更清楚需要注意的身體狀況。另外，我們還設置留言板供用戶可以抒發或者分享自己的心情，所有內容一律保密，不會外流，請用戶放心。
+本系統主要是針對病人去做情緒偵測，並且當下立即利用播放音樂、回應話去舒緩病人的非正向情緒，每一次的情緒都會儲存在後端的database裡面，病人可以透過我們心靈陪伴分析平台網頁，去了解自己每天的情緒和全部的情緒統計，搭配貼心小建議可以更清楚需要注意的身體狀況。另外，我們還設置留言板供用戶可以抒發或者分享自己的心情，所有內容一律保密，不會外流，請用戶放心。
 
 \section{用戶類別和特質}
 我們的系統用戶，針對正在接受治療的病人，如︰憂鬱症、癌症等，利用攝影機拍攝病人的臉部影像，辨識是否處於非正向情緒，如︰焦慮、憤怒等，播放語音回應及線上音樂，緩和病人情緒，並且可利用心靈陪伴分析平台網頁，網頁中提供病人的情緒數據、建議事項及心情留言板，藉此了解、調適個人心理狀態，輔助病人情緒達到穩定，使病情能更快速康復。
@@ -211,30 +211,23 @@ youtube_dl、lxml、ffmpeg\end{bfseries}}%%網頁端要加
 \end{itemize}
 
 \section{設計和實作上的限制}
-資料庫來源缺乏東方臉孔的數據。
-$<$Describe any items or issues that will limit the options available to the 
-developers. These might include: corporate or regulatory policies; hardware 
-limitations (timing requirements, memory requirements); interfaces to other 
-applications; specific technologies, tools, and databases to be used; parallel 
-operations; language requirements; communications protocols; security 
-considerations; design conventions or programming standards (for example, if the 
-customer’s organization will be responsible for maintaining the delivered 
-software).$>$
+卷積神經網路的訓練集來源，因採用國外公開的臉孔資料庫，因此缺乏東方臉孔的數據。
+%$<$Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).$>$
 
 \section{用戶文件}
 $<$List the user documentation components (such as user manuals, on-line help, 
 and tutorials) that will be delivered along with the software. Identify any 
 known user documentation delivery formats or standards.$>$
-\section{假設和依賴}
-
-$<$List any assumed factors (as opposed to known facts) that could affect the 
-requirements stated in the SRS. These could include third-party or commercial 
-components that you plan to use, issues around the development or operating 
-environment, or constraints. The project could be affected if these assumptions 
-are incorrect, are not shared, or change. Also identify any dependencies the 
-project has on external factors, such as software components that you intend to 
-reuse from another project, unless they are already documented elsewhere (for 
-example, in the vision and scope document or the project plan).$>$
+\section{系統假設和依賴}
+本產品XXXXX，有使用XXX技術，因此當XXXXX第三方停止時，我們的程式可能XXX中斷
+%$<$List any assumed factors (as opposed to known facts) that could affect the 
+%requirements stated in the SRS. These could include third-party or commercial 
+%components that you plan to use, issues around the development or operating 
+%environment, or constraints. The project could be affected if these assumptions 
+%are incorrect, are not shared, or change. Also identify any dependencies the 
+%project has on external factors, such as software components that you intend to 
+%reuse from another project, unless they are already documented elsewhere (for 
+%example, in the vision and scope document or the project plan).$>$
 
 
 \chapter{界面規格設計}
@@ -276,24 +269,24 @@ example, in the vision and scope document or the project plan).$>$
 本產品包含USB2.0外接攝影鏡頭、藍芽喇叭及音源線，將攝影鏡頭及藍芽喇叭分別插入電腦USB孔及音源孔，即可使用。另外，筆電本身含有攝影鏡頭的，則可不必在外接攝影鏡頭，如圖\ref{fig:hardInterface}。
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=1\textwidth]{./figs/hardware.pdf}
+\includegraphics[width=0.8\textwidth]{./figs/hardware.pdf}
 \end{center}
-\caption{硬體介面說明圖。}
+\caption{硬體界面說明圖。}
 \label{fig:hardInterface}
 \end{figure}
 %$<$Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.$>$硬體線路圖, 腳位, 訊號等資訊. 最好用Bloack diagram 的方式描述另外如能加上耗電量, 效能等資訊更好.
 
 \section{軟體界面}
-$<$Describe the connections between this product and other specific software 
-components (name and version), including databases, operating systems, tools, 
-libraries, and integrated commercial components. Identify the data items or 
-messages coming into the system and going out and describe the purpose of each.  
-Describe the services needed and the nature of communications. Refer to 
-documents that describe detailed application programming interface protocols.  
-Identify data that will be shared across software components. If the data 
-sharing mechanism must be implemented in a specific way (for example, use of a 
-global data area in a multitasking operating system), specify this as an 
-implementation constraint.$>$
+%$<$Describe the connections between this product and other specific software 
+%components (name and version), including databases, operating systems, tools, 
+%libraries, and integrated commercial components. Identify the data items or 
+%messages coming into the system and going out and describe the purpose of each.  
+%Describe the services needed and the nature of communications. Refer to 
+%documents that describe detailed application programming interface protocols.  
+%Identify data that will be shared across software components. If the data 
+%sharing mechanism must be implemented in a specific way (for example, use of a 
+%global data area in a multitasking operating system), specify this as an 
+%implementation constraint.$>$
 軟體的架構, 功能列表, 變數與函數的列表說明.
 
 \section{通信界面}
@@ -307,7 +300,7 @@ transfer rates, and synchronization mechanisms.$>$
 
 \chapter{系統功能}
 
-根據國內〈科學發展〉期刊的相關研究發現，音樂可以產生催產素，以減低焦慮與恐懼，有效改善情緒，因此，本系統：基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制，本專案系統主要分為兩部份，分別為使用者端和伺服器端，使用者端為情緒偵測演算法及情緒緩和機制，伺服器端則為雲端心靈陪伴分析整合平台，如圖\ref{fig:framework}，概略說明如下：
+根據國內〈科學發展〉期刊的相關研究發現，音樂可以產生催產素，以減低焦慮與恐懼，有效改善情緒，因此，本系統：基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制，本專案系統主要分為兩部份，分別為使用者端和伺服器端，使用者端為即時分析情緒及情緒緩和，包含情緒偵測演算法及情緒緩和機制，伺服器端則為後端平台做分析追蹤，包含雲端心靈陪伴分析整合平台，如圖\ref{fig:framework}，概略說明如下：
 
 %%%%圖要改
 \begin{figure}[!h]
@@ -318,19 +311,19 @@ transfer rates, and synchronization mechanisms.$>$
 \label{fig:framework}
 \end{figure}
 
-\section{即時分析情緒}
+\section{使用者端}
 
-\subsection{功能敘述和優先級}
+\subsection{即時分析情緒及情緒緩和}
 
 
 \begin{itemize}
 \item{\begin{bfseries}{情緒偵測演算法：}\end{bfseries}}
 
-我們為避免病人因極端負面情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
+我們為避免病人因非正向情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
 
 \item{\begin{bfseries}{情緒緩和機制：}\end{bfseries}}
 
-透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因極端負面情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
+透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因非正向情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
 \begin{itemize}
 \item[(a)]{\begin{bfseries}{搜索文字：}\end{bfseries}}
 
@@ -393,7 +386,7 @@ transfer rates, and synchronization mechanisms.$>$
 
 當我們生成音訊資料後，使用omxplayer套件，將音訊播放給病人收聽，改善病人當下的情緒，如圖\ref{fig:FrameworkFirstAndSecond}右半部(e)所示。\\
 
-根據以上五個步驟，即可完成情緒緩和機制，藉此避免病人因極端負面情緒，導致影響病情，賦予病人積極、正面的動力。\\
+根據以上五個步驟，即可完成情緒緩和機制，藉此避免病人因非正向情緒，導致影響病情，賦予病人積極、正面的動力。\\
 
 \end{itemize}
 \end{itemize}
@@ -406,7 +399,7 @@ transfer rates, and synchronization mechanisms.$>$
 \label{fig:FrameworkFirstAndSecond}
 \end{figure}
 
-\subsection{刺激/反應序列}
+\subsection{UML使用案例圖表}
 $<$List the sequences of user actions and system responses that stimulate the 
 behavior defined for this feature. These will correspond to the dialog elements 
 associated with use cases.$>$
@@ -428,17 +421,29 @@ associated with use cases.$>$
 \end{center}  
 
 
-\section{後端平台做分析追蹤}
+\section{伺服器端}
 $<$Don’t really say “System Feature 1.” State the feature name in just a few 
 words.$>$
 
-\subsection{功能敘述和優先級}
-$<$Provide a short description of the feature and indicate whether it is of 
-High, Medium, or Low priority. You could also include specific priority 
-component ratings, such as benefit, penalty, cost, and risk (each rated on a 
-relative scale from a low of 1 to a high of 9).$>$
+\subsection{後端平台做分析追蹤}
+\begin{itemize}
+\item{\begin{bfseries}{雲端心靈陪伴分析整合平台：}\end{bfseries}}
+透過即時分析情緒及情緒緩和過後，我們導入分析後的非正向情緒類別，設計一雲端心靈陪伴分析整合平台，如圖X所示，以提供視覺化情緒統計的服務。如此一來，病人能透過網頁，查詢自己的歷史狀況，以及分析統計結果；查詢自己常處於哪類的非正向情緒...........。
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/Web.pdf}
+\end{center}
+\caption{伺服器端：雲端心靈陪伴分析整合平台示例圖。}
+\label{fig:webframework}
+\end{figure}
+\end{itemize}
 
-\subsection{刺激/反應序列}
+%$<$Provide a short description of the feature and indicate whether it is of 
+%High, Medium, or Low priority. You could also include specific priority 
+%component ratings, such as benefit, penalty, cost, and risk (each rated on a 
+%relative scale from a low of 1 to a high of 9).$>$
+
+\subsection{UML使用者案例圖表}
 $<$List the sequences of user actions and system responses that stimulate the 
 behavior defined for this feature. These will correspond to the dialog elements 
 associated with use cases.$>$
@@ -494,23 +499,23 @@ security or privacy certifications that must be satisfied.$>$
 \begin{itemize}
 \item[一、]{尋求心理諮詢師：}
 
-諮詢師利用專業，在一對一的方式下，引導病人舒緩甚至是消除負面情緒，並且給予適當的建議，所以價錢上相對來說是非常昂貴的。除此之外，尋求諮詢必須事先預約，導致當下的負面情緒無法被立即的解決， 會有「非即時性」的問題。
+諮詢師利用專業，在一對一的方式下，引導病人舒緩甚至是消除非正向情緒，並且給予適當的建議，所以價錢上相對來說是非常昂貴的。除此之外，尋求諮詢必須事先預約，導致當下的非正向情緒無法被立即的解決， 會有「非即時性」的問題。
 
 \item[二、]{親朋好友：}
 
-在心情不好的情況下，有時會不想和熟悉的人表達、抱怨，因為必須要顧及自己的面子，或者兩人之間朋友圈的重疊導致無法隨心所欲、暢所欲言，反而可能更壓抑自己，無法成功消除自己的負面情緒；況且，非專業的人士提供的建議不一定是最適合的，甚至會導致負面情緒更為惡劣。
+在心情不好的情況下，有時會不想和熟悉的人表達、抱怨，因為必須要顧及自己的面子，或者兩人之間朋友圈的重疊導致無法隨心所欲、暢所欲言，反而可能更壓抑自己，無法成功消除自己的非正向情緒；況且，非專業的人士提供的建議不一定是最適合的，甚至會導致非正向情緒更為惡劣。
 
 \end{itemize}
 
-基於上述兩種穩定情緒方法仍有不足之處，因此，我們提出本系統：基於即時情緒分析之心靈陪伴系統，使用深度學習產生訓練模型，將訓練資料進行情緒特徵抽取，再利用訓練完成的模型偵測病人情緒，獲得改善情緒之關鍵字，即時播放緩和情緒之音樂及心靈小語，舒緩病人負面情緒。本系統具有以下三點特性：
+基於上述兩種穩定情緒方法仍有不足之處，因此，我們提出本系統：基於即時情緒分析之心靈陪伴系統，使用深度學習產生訓練模型，將訓練資料進行情緒特徵抽取，再利用訓練完成的模型偵測病人情緒，獲得改善情緒之關鍵字，即時播放緩和情緒之音樂及心靈小語，舒緩病人非正向情緒。本系統具有以下三點特性：
 \begin{itemize}
 \item[1.]{專業性：}我們每個回饋、音樂，都是根據研究和專家證實過可以緩和情緒的回應，所以和親朋好友相比，此系統帶給病人情緒上的緩解是更立即且實用的。
 
 
-\item[2.]{ 即時性：}在產生負面情緒的當下立刻使用本系統，系統可以立即偵測病人的情緒，並且針對此情緒去做適當的回饋，而非像上述方法還需要事先預約，致使情緒不能立即紓解。
+\item[2.]{ 即時性：}在產生非正向情緒的當下立刻使用本系統，系統可以立即偵測病人的情緒，並且針對此情緒去做適當的回饋，而非像上述方法還需要事先預約，致使情緒不能立即紓解。
 
 
-\item[3.] {後續追蹤：}上述提到，諮詢是尋求專業人士的協助，價格昂貴，導致可能久久才能諮詢一次。而使用此系統完全不會有這個問題，負面情緒產生時，直接打開系統就可以使用，不會限制次數，也沒有價錢上的開銷。
+\item[3.] {後續追蹤：}上述提到，諮詢是尋求專業人士的協助，價格昂貴，導致可能久久才能諮詢一次。而使用此系統完全不會有這個問題，非正向情緒產生時，直接打開系統就可以使用，不會限制次數，也沒有價錢上的開銷。
 \end{itemize}
 
 搭配表\ref{lab:1}，可以看出我們的系統同時擁有專業性、即時性和後續追蹤，相較其他兩個穩定情緒的方法我們系統不必花費高昂金額，尋求心理諮商師協助，也不會因顧及面子問題而無法暢所欲言，即可立即且有效緩和情緒。\\

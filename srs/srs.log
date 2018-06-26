@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2018.2.1)  25 JUN 2018 17:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2018.2.1)  26 JUN 2018 13:10
 entering extended mode
 **srs.tex
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\srs.tex"
+(C:\Users\user\Desktop\FinalProject-master\srs\srs.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,13 +13,13 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\scrreprt.cls"
+(C:\Users\user\Desktop\FinalProject-master\srs\scrreprt.cls
 Document Class: scrreprt 2018/03/30 v3.25 KOMA-Script document class (report)
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\scrkbase.sty"
+(C:\Users\user\Desktop\FinalProject-master\srs\scrkbase.sty
 Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\scrbase.sty"
+(C:\Users\user\Desktop\FinalProject-master\srs\scrbase.sty
 Package: scrbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
@@ -27,9 +27,10 @@ basics and keyval usage)
 "
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) ("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\scrlfile.sty"
+) (C:\Users\user\Desktop\FinalProject-master\srs\scrlfile.sty
 Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
-))) ("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\tocbasic.sty"
+)))
+(C:\Users\user\Desktop\FinalProject-master\srs\tocbasic.sty
 Package: tocbasic 2018/03/30 v3.25 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -52,8 +53,7 @@ ine 2328.
 12pt.clo"
 File: scrsize12pt.clo 2018/03/30 v3.25 KOMA-Script font size class option (12pt
 )
-)
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\typearea.sty"
+) (C:\Users\user\Desktop\FinalProject-master\srs\typearea.sty
 Package: typearea 2018/03/30 v3.25 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count79
@@ -846,91 +846,99 @@ LaTeX Info: Redefining \selectfont on input line 755.
 )
 ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-))
+)) (C:\Users\user\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.s
+ty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 42.
+(hyperref)                setting the option has no effect on input line 44.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 42.
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\srs.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
+(C:\Users\user\Desktop\FinalProject-master\srs\srs.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 \c@lstlisting=\count128
 \AtBeginShipoutBox=\box34
 
@@ -943,7 +951,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 61.
+Package hyperref Info: Link coloring ON on input line 63.
 
 ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -955,12 +963,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
-
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\srs.out")
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\srs.out")
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
+ (C:\Users\user\Desktop\FinalProject-master\srs\srs.out)
+(C:\Users\user\Desktop\FinalProject-master\srs\srs.out)
 \@outlinefile=\write3
 
 (C:\Users\user\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
@@ -1000,7 +1007,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (C:\Users\user\AppData\Roaming\MiKTeX\2.9\tex\latex\cjk\UTF8\UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+bkai on input line 63.
+LaTeX Font Info:    Try loading font information for C70+bkai on input line 65.
 
 
 (C:\Users\user\AppData\Roaming\MiKTeX\2.9\tex\latex\cjk\UTF8\c70bkai.fd
@@ -1012,7 +1019,7 @@ File: c70bkai.fdx 2015/04/18 4.8.4
 [1
 
 {C:/Users/user/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\srs.toc"
+(C:\Users\user\Desktop\FinalProject-master\srs\srs.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1023,8 +1030,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ])
 \tf@toc=\write4
-
-[3] [4
+ [3] [4
 
 ]
 chapter 1.
@@ -1044,115 +1050,144 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 [5
 
-] [6]
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 153.
+
+ ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
+
+Overfull \hbox (16.30255pt too wide) in paragraph at lines 153--154
+[]\OT1/cmr/m/n/12 http://big5.gov.cn/gate/big5/www.gov.cn/fwxx/kp/2008-01/17/co
+ntent[]-861306.htm 
+ []
+
+[6]
 chapter 2.
 [7
 
 ] [8] [9]
 chapter 3.
-<./figs/Web.pdf, id=394, 2062.70625pt x 855.94781pt>
+<./figs/DetectResult-2.pdf, id=375, 710.655pt x 383.93437pt>
+File: ./figs/DetectResult-2.pdf Graphic file (type pdf)
+<use ./figs/DetectResult-2.pdf>
+Package pdftex.def Info: ./figs/DetectResult-2.pdf  used on input line 250.
+(pdftex.def)             Requested size: 313.69029pt x 169.47647pt.
+<./figs/Web.pdf, id=377, 2216.28pt x 884.55469pt>
 File: ./figs/Web.pdf Graphic file (type pdf)
 <use ./figs/Web.pdf>
-Package pdftex.def Info: ./figs/Web.pdf  used on input line 251.
-(pdftex.def)             Requested size: 448.13095pt x 185.95818pt.
+Package pdftex.def Info: ./figs/Web.pdf  used on input line 260.
+(pdftex.def)             Requested size: 448.13095pt x 178.8514pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figs/hardware.pdf, id=380, 703.87968pt x 363.60844pt>
+File: ./figs/hardware.pdf Graphic file (type pdf)
+<use ./figs/hardware.pdf>
+Package pdftex.def Info: ./figs/hardware.pdf  used on input line 272.
+(pdftex.def)             Requested size: 358.50612pt x 185.19373pt.
 [10
 
- <C:/Users/user/Desktop/opendata/新增資料夾 (3) - 複製/figs/Web.pdf>] [1
-1]
+ <C:/Users/user/Desktop/FinalProject-master/srs/figs/DetectResult-2.pdf>]
+[11 <C:/Users/user/Desktop/FinalProject-master/srs/figs/Web.pdf> <C:/Users/user
+/Desktop/FinalProject-master/srs/figs/hardware.pdf>] [12]
 chapter 4.
-<./figs/framework.pdf, id=434, 1223.32031pt x 341.02406pt>
-File: ./figs/framework.pdf Graphic file (type pdf)
-<use ./figs/framework.pdf>
-Package pdftex.def Info: ./figs/framework.pdf  used on input line 298.
-(pdftex.def)             Requested size: 448.13095pt x 124.92285pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 309.
+<./figs/framework-version2.pdf, id=477, 1786.42406pt x 355.3275pt>
+File: ./figs/framework-version2.pdf Graphic file (type pdf)
+<use ./figs/framework-version2.pdf>
+Package pdftex.def Info: ./figs/framework-version2.pdf  used on input line 308.
 
-("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
+(pdftex.def)             Requested size: 448.13095pt x 89.13527pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
-[12
+[13
 
- <C:/Users/user/Desktop/opendata/新增資料夾 (3) - 複製/figs/framework.pd
-f>]
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+ <C:/Users/user/Desktop/FinalProject-master/srs/figs/framework-version2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
-[15] [16] [17]
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+
+ []
+
+<./figs/FrameworkFirstAndSecond.pdf, id=574, 1209.01688pt x 352.31625pt>
+File: ./figs/FrameworkFirstAndSecond.pdf Graphic file (type pdf)
+<use ./figs/FrameworkFirstAndSecond.pdf>
+Package pdftex.def Info: ./figs/FrameworkFirstAndSecond.pdf  used on input line
+ 396.
+(pdftex.def)             Requested size: 448.13095pt x 130.58612pt.
+[16 <C:/Users/user/Desktop/FinalProject-master/srs/figs/FrameworkFirstAndSecond
+.pdf>]
+File: ./figs/Web.pdf Graphic file (type pdf)
+<use ./figs/Web.pdf>
+Package pdftex.def Info: ./figs/Web.pdf  used on input line 434.
+(pdftex.def)             Requested size: 448.13095pt x 178.8514pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17] [18]
 chapter 5.
-[18
+[19
 
-] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
 
  []
 
-[20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 837.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 837.
- ("C:\Users\user\Desktop\opendata\新增資料夾 (3) - 複製\srs.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 837.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 837.
+[21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 853.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 853.
+ (C:\Users\user\Desktop\FinalProject-master\srs\srs.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 853.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 853.
 Package rerunfilecheck Info: File `srs.out' has not changed.
-(rerunfilecheck)             Checksum: C2D618D9AA5DA6F2BEDF1581C62819FE;3608.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 837.
+(rerunfilecheck)             Checksum: 3D1D76724CEE7A39FBEA491C9C4128C1;3184.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 853.
  ) 
 Here is how much of TeX's memory you used:
- 14473 strings out of 494045
- 221118 string characters out of 3148391
- 407737 words of memory out of 3000000
- 17168 multiletter control sequences out of 15000+200000
- 60199 words of font info for 211 fonts, out of 3000000 for 9000
+ 14617 strings out of 494045
+ 223344 string characters out of 3148391
+ 408012 words of memory out of 3000000
+ 17294 multiletter control sequences out of 15000+200000
+ 61133 words of font info for 214 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 41i,17n,66p,9103b,1488s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,17n,66p,9103b,1650s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/user/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu00.pf
-b><C:/Users/user/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu21.pf
+b><C:/Users/user/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu03.pf
 b><C:/Users/user/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu25.pf
 b><C:/Users/user/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu30.pf
 b><C:/Users/user/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu4e.pf
@@ -1240,9 +1275,9 @@ ic/amsfonts/cm/cmmi12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/user/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/user/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on srs.pdf (20 pages, 1263930 bytes).
+Output written on srs.pdf (21 pages, 2321508 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 663 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 946 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 646 words of extra memory for PDF output out of 10000 (max. 10000000)
 
