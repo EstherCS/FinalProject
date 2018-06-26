@@ -422,9 +422,9 @@ associated with use cases.$>$
 
 \subsection{後端平台做分析追蹤}
 \begin{itemize}
-\item{\begin{bfseries}{雲端心靈陪伴分析整合平台：}\end{bfseries}}透過即時分析情緒及情緒緩和後，我們導入分析後的非正向情緒類別，設計一雲端心靈陪伴分析整合平台，如圖\ref{fig:webframework}所示，提供視覺化的情緒統計服務。如此一來，病人可以透過網頁，查看情緒分析統計結果，以及自己經常處於哪一別類的非正向情緒，藉此了解、調適個人心理狀態。
+\item{\begin{bfseries}{雲端心靈陪伴分析整合平台：}\end{bfseries}}透過即時分析情緒及情緒緩和後，我們透過分析後的非正向情緒，設計一雲端心靈陪伴分析整合平台，如圖\ref{fig:webframework}所示，提供視覺化的情緒統計服務。如此一來，病人可以透過網頁，查看情緒分析統計結果，以及自己經常處於哪一別類的非正向情緒，藉此了解、調適個人心理狀態。
 
-$~~~~~$如圖\ref{fig:webframework}，我們將計算後的非正向情緒類別存入雲端伺服器，再經由雲端伺服器取出非正向情緒類別等資訊，分析、統整資訊，以直方圖與簡單文字呈現於網頁平台，如此一來，使用者不僅能在情緒不穩的情況下，立即收聽線上音樂，舒緩情緒，也能透過網頁，查看非正向情緒類別的統計資訊。
+$~~~~~$如圖\ref{fig:webframework}，我們將計算後的非正向情緒類別存入雲端伺服器，再經由雲端伺服器取出非正向情緒等資訊，分析、統整資訊，以直方圖與簡單文字呈現於網頁平台，如此一來，使用者不僅能在情緒不穩的情況下，立即收聽線上音樂，舒緩情緒，也能透過網頁，查看非正向情緒類別的統計資訊。
 
 $~~~~~$我們以網頁作為平台，將蒐集到的情緒資料視覺化，以Django架構建制網頁，針對病人的非正向情緒，統計、分析結果，並且提供貼心小建議與留言板，如圖\ref{fig:webframework}，貼心小建議會以文字方式顯示，讓使用者知道非正向情緒可能導致的疾病，提醒使用者調適情緒。留言板提供使用者抒發情緒、分享心情，而留言內容將存入雲端伺服器，我們將透過留言內容，分析非正向情緒，調整回應字與關鍵字。
 \begin{figure}[!h]
@@ -447,16 +447,16 @@ behavior defined for this feature. These will correspond to the dialog elements
 associated with use cases.$>$
 
 \subsection{功能性需求}
-$<$Itemize the detailed functional requirements associated with this feature.  
-These are the software capabilities that must be present in order for the user 
-to carry out the services provided by the feature, or to execute the use case.  
-Include how the product should respond to anticipated error conditions or 
-invalid inputs. Requirements should be concise, complete, unambiguous, 
-verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary 
-information is not yet available.$>$
+\begin{center}  
+\begin{tabular}{|l| p{10cm}|}  
+\hline  
+功能性需求 & 功能性需求描述   \\ \hline  
+查看情緒分析統計資料 &病人可透過分析整合平台查看過去最常出現分心的非正向情緒，且分別以當日統計、累計統計方式呈現其統計結果。    \\ \hline  
+貼心小建議 &貼心小建議以文字方式呈現，可透過此讓使用者瞭解非正向情緒可能導致的疾病，提醒使用者調適情緒。    \\ \hline
+留言版 &提供使用者抒發情緒及分享心情\\ \hline
 
-$<$Each requirement should be uniquely identified with a sequence number or a 
-meaningful tag of some kind.$>$
+\end{tabular}  
+\end{center}  
 
 
 \chapter{其他非功能性需求}

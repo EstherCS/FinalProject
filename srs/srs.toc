@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {4.2}伺服器端}{16}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}後端平台做分析追蹤}{16}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}UML使用者案例圖表}{17}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}功能性需求}{17}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}功能性需求}{18}{subsection.4.2.3}
 \contentsline {chapter}{\numberline {5}其他非功能性需求}{19}{chapter.5}
 \contentsline {section}{\numberline {5.1}性能需求}{19}{section.5.1}
 \contentsline {section}{\numberline {5.2}Safety需求}{19}{section.5.2}
