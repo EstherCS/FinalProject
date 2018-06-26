@@ -166,14 +166,14 @@
 \chapter{總體描述}
 
 \section{產品透視} %components diagram
-$<$Describe the context and origin of the product being specified in this SRS.  
-For example, state whether this product is a follow-on member of a product 
-family, a replacement for certain existing systems, or a new, self-contained 
-product. If the SRS defines a component of a larger system, relate the 
-requirements of the larger system to the functionality of this software and 
-identify interfaces between the two. A simple diagram that shows the major 
-components of the overall system, subsystem interconnections, and external 
-interfaces can be helpful.$>$
+%$<$Describe the context and origin of the product being specified in this SRS.  
+%For example, state whether this product is a follow-on member of a product 
+%family, a replacement for certain existing systems, or a new, self-contained 
+%product. If the SRS defines a component of a larger system, relate the 
+%requirements of the larger system to the functionality of this software and 
+%identify interfaces between the two. A simple diagram that shows the major 
+%components of the overall system, subsystem interconnections, and external 
+%interfaces can be helpful.$>$
 
 \section{產品功能} %class diagram
 %$<$Summarize the major functions the product must perform or must let the user 
@@ -214,7 +214,7 @@ interfaces can be helpful.$>$
 %$<$Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).$>$
 
 \section{用戶文件}
-用戶文件與資訊，請參閱本文件的第3部份，界面規格設計。
+用戶文件與資訊，請參閱本文件的第3部份，介面規格設計。
 %$<$List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.$>$
 \section{系統假設和依賴}
 
@@ -231,7 +231,7 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 %example, in the vision and scope document or the project plan).$>$
 
 
-\chapter{界面規格設計}
+\chapter{介面規格設計}
 
 \section{使用者介面}
 %$<$Describe the logical characteristics of each interface between the software 
@@ -266,18 +266,18 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 
 
 
-\section{硬體界面}
-本產品包含USB2.0外接攝影鏡頭、藍芽喇叭及音源線，將攝影鏡頭及藍芽喇叭分別插入電腦USB孔及音源孔，即可使用。另外，筆電本身含有攝影鏡頭的，則可不必在外接攝影鏡頭，如圖\ref{fig:hardInterface}。
+\section{硬體介面}
+本產品包含USB2.0外接攝影鏡頭、藍芽喇叭及音源線，將攝影鏡頭及藍芽喇叭分別插入電腦USB孔及音源孔，即可使用。另外，若筆電本身含有攝影鏡頭，則不必外接攝影鏡頭，如圖\ref{fig:hardInterface}。
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{./figs/hardware.pdf}
 \end{center}
-\caption{硬體界面說明圖。}
+\caption{硬體介面說明圖。}
 \label{fig:hardInterface}
 \end{figure}
 %$<$Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.$>$硬體線路圖, 腳位, 訊號等資訊. 最好用Bloack diagram 的方式描述另外如能加上耗電量, 效能等資訊更好.
 
-\section{軟體界面}
+\section{軟體介面}
 %$<$Describe the connections between this product and other specific software 
 %components (name and version), including databases, operating systems, tools, 
 %libraries, and integrated commercial components. Identify the data items or 
@@ -290,7 +290,7 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 %implementation constraint.$>$
 軟體的架構, 功能列表, 變數與函數的列表說明.
 
-\section{通信界面}
+\section{通信介面}
 $<$Describe the requirements associated with any communications functions 
 required by this product, including e-mail, web browser, network server 
 communications protocols, electronic forms, and so on. Define any pertinent 
@@ -318,13 +318,9 @@ transfer rates, and synchronization mechanisms.$>$
 
 
 \begin{itemize}
-\item{\begin{bfseries}{情緒偵測演算法：}\end{bfseries}}
+\item{\begin{bfseries}{情緒偵測演算法：}\end{bfseries}}我們為避免病人因非正向情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
 
-我們為避免病人因非正向情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
-
-\item{\begin{bfseries}{情緒緩和機制：}\end{bfseries}}
-
-透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因非正向情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
+\item{\begin{bfseries}{情緒緩和機制：}\end{bfseries}}透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因非正向情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
 \begin{itemize}
 \item[(a)]{\begin{bfseries}{搜索文字：}\end{bfseries}}
 
@@ -426,8 +422,11 @@ associated with use cases.$>$
 
 \subsection{後端平台做分析追蹤}
 \begin{itemize}
-\item{\begin{bfseries}{雲端心靈陪伴分析整合平台：}\end{bfseries}}
-透過即時分析情緒及情緒緩和過後，我們導入分析後的非正向情緒類別，設計一雲端心靈陪伴分析整合平台，如圖\ref{fig:webframework}所示，以提供視覺化情緒統計的服務。如此一來，病人能透過網頁，查詢自己的歷史狀況，以及分析統計結果；查詢自己常處於哪類的非正向情緒...........。
+\item{\begin{bfseries}{雲端心靈陪伴分析整合平台：}\end{bfseries}}透過即時分析情緒及情緒緩和後，我們導入分析後的非正向情緒類別，設計一雲端心靈陪伴分析整合平台，如圖\ref{fig:webframework}所示，提供視覺化的情緒統計服務。如此一來，病人可以透過網頁，查看情緒分析統計結果，以及自己經常處於哪一別類的非正向情緒，藉此了解、調適個人心理狀態。
+
+$~~~~~$如圖\ref{fig:webframework}，我們將計算後的非正向情緒類別存入雲端伺服器，再經由雲端伺服器取出非正向情緒類別等資訊，分析、統整資訊，以直方圖與簡單文字呈現於網頁平台，如此一來，使用者不僅能在情緒不穩的情況下，立即收聽線上音樂，舒緩情緒，也能透過網頁，查看非正向情緒類別的統計資訊。
+
+$~~~~~$我們以網頁作為平台，將蒐集到的情緒資料視覺化，以Django架構建制網頁，針對病人的非正向情緒，統計、分析結果，並且提供貼心小建議與留言板，如圖\ref{fig:webframework}，貼心小建議會以文字方式顯示，讓使用者知道非正向情緒可能導致的疾病，提醒使用者調適情緒。留言板提供使用者抒發情緒、分享心情，而留言內容將存入雲端伺服器，我們將透過留言內容，分析非正向情緒，調整回應字與關鍵字。
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=1\textwidth]{./figs/Web.pdf}
@@ -477,20 +476,11 @@ meaningful tag of some kind.$>$
 \end{tabular}  
 \end{center}  
 
-\section{safety需求}
-$<$Specify those requirements that are concerned with possible loss, damage, or 
-harm that could result from the use of the product. Define any safeguards or 
-actions that must be taken, as well as actions that must be prevented. Refer to 
-any external policies or regulations that state safety issues that affect the 
-product’s design or use. Define any safety certifications that must be 
-satisfied.$>$
+\section{Safety需求}None.
+%$<$Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.$>$
 
-\section{Security需求}
-$<$Specify any requirements regarding security or privacy issues surrounding use 
-of the product or protection of the data used or created by the product. Define 
-any user identity authentication requirements. Refer to any external policies or 
-regulations containing security issues that affect the product. Define any 
-security or privacy certifications that must be satisfied.$>$
+\section{Security需求}None.
+%$<$Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.$>$
 
 \section{軟體優良特質}
 目前一般穩定情緒方法有兩種：
