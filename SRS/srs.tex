@@ -29,6 +29,7 @@
 \usepackage{CJKutf8}
 \usepackage{cite}
 \usepackage{indentfirst} %首行縮排
+\usepackage{hyperref}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -47,9 +48,9 @@
 %\title{%
 
 %}
-\renewcommand{\tablename}{表} % 在文章中 table caption 會以「表 x」表示
-\renewcommand{\figurename}{圖} % 在文章中 figure caption 
+
 \renewcommand{\baselinestretch}{1.5} 
+
 
 % 全部行距皆為 20 points
 \CJKencfamily{UTF8}{bkai} % 使用標楷體
@@ -59,9 +60,10 @@
     \clearpage\end{CJK}}
 \makeatother
 
-\usepackage{hyperref}
 \begin{document}
 
+\renewcommand{\tablename}{表} % 在文章中 table caption 會以「表 x」表示
+\renewcommand{\figurename}{圖} % 在文章中 figure caption 會以「圖 x」表示
 \CJKindent
 \begin{center}
  %   \rule{16cm}{5pt}\vskip1cm
@@ -110,7 +112,21 @@
         \hline
 	    蔡昕芸、吳悅琳 & 6/21 & 內容修改 & 2.2\\
         \hline
-	    31 & 6/22 & 內容修改 & 3\\
+	    賴詩雨 & 6/22 & 內容修改 & 3\\
+        \hline
+         龐渝庭 & 6/22 & 內容修改 & 3.1\\
+        \hline
+         蔡昕芸、吳悅琳、龐渝庭 & 6/25 & 完成各項細節 & 4\\
+        \hline
+	    賴詩雨 & 6/26 & 內容修改 & 4.1\\
+        \hline
+         龐渝庭 & 6/27 & 內容修改 & 4.2\\
+        \hline
+	    蔡怡君 & 6/28 & 內容修改 & 4.3\\
+        \hline
+	    吳悅琳 & 6/28 & 內容修改 & 4.4\\
+        \hline
+	    賴詩雨 & 6/28 & 最後修改 & 4.5\\
         \hline
     \end{tabular}
 \end{center}
@@ -118,11 +134,11 @@
 
 \section{目的}
 
-現代人工作忙碌、生活步調快，容易產生緊張、焦慮等非正向情緒。研究顯示長久處於非正向情緒，可能造成身體器官的損壞，而罹患某些疾病，例如：癌症、憂鬱症和躁鬱症等。為了解決此問題，本團隊提出一基於即時情緒分析之心靈陪伴系統，透過攝影機，拍攝病人臉部影像，並快速辨識使用者是否處於非正向的情緒。同時，即時線上搜尋改善病人當下情緒的音樂播放，並且以語音方式播放可以緩和情緒的心靈小語，藉此使病人心靈得到安慰。
+現代人工作忙碌、生活步調快，容易產生憤怒、憂慮等非正向情緒。研究顯示長久處於非正向情緒，可能造成身體器官的損壞，而罹患某些疾病，例如：癌症、憂鬱症和躁鬱症等。在我們的生活中，這些疾病就存在我們周圍。以癌症為例，全球每五分鐘就有一人罹癌；而在台灣，每四人就有一人患有憂鬱症或躁鬱症。這些生病的人要能夠更快的恢復健康，除了要接受正規的療程外，還需要保持正向的情緒，才能使疾病比較快好。因此，本團隊提出一基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制，透過攝影機，拍攝病人臉部影像，並快速辨識使用者是否處於非正向的情緒。同時，以語音方式播放可以緩和情緒的正能量小語，並即時線上搜尋改善病人當下情緒的音樂播放，藉此使病人心靈得到安慰，能夠從非正向情緒轉變成正向情緒。
 
-除此之外，本產品也提供心靈陪伴分析平台，讓使用者可以查看過去所有非正向情緒的累積統計圖，以及非正向情緒可能導致的相關疾病，去做提醒跟建議。另外，平台也提供貼心小建議及留言板，貼心小建議讓使用者知道非正向情緒可能導致的疾病，提醒使用者注意心理狀態，讓使用者調適情緒；留言板提供使用者抒發情緒、分享心情。
+除此之外，本產品也提供心靈陪伴分析平台，讓使用者可以查看過去所有非正向情緒的累積統計圖，並且會依據使用者的情緒去算出開心指數供使用者參考。另外，平台也提供貼心小建議及留言板，貼心小建議讓使用者知道非正向情緒可能導致的疾病，提醒使用者注意心理狀態，讓使用者調適情緒；留言板提供使用者抒發情緒、分享心情，而這些使用者抒發的內容不會對外公開，使用者不須擔心隱私被洩露。
 
-最後，我們根據使用者的留言內容，做客製化分析，針對使用者的問題去修改回應內容，使回應能更符合使用者的需要。況且，這些內容是不會對外公開的，使用者不須擔心隱私被洩露。
+最後，我們根據使用者的非正向情緒以及留言內容，做客製化分析，針對使用者的問題去修改回應的正能量小語，使回應能更符合使用者的需要，讓使用者能夠更容易保持正向情緒。
 
 %\section{文件公約} %應該不用寫
 %$<$Describe any standards or typographical conventions that were followed when 
@@ -139,7 +155,7 @@
 %overview sections and proceeding through the sections that are most pertinent to 
 %each reader type.$>$
 
-本SRS文件提供給使用者、開發團隊與維護人員閱讀，使用者透過閱讀本文件，了解產品以及操作說明，開發團隊進行系統開發時的依據，與維護人員日後維護系統時的參考文件。
+本SRS文件提供給使用者、開發團隊與維護人員閱讀，使用者透過閱讀本文件，了解產品以及操作說明，開發團隊進行產品開發時的依據，與維護人員日後維護系統時的參考文件。
 
 \section{計畫範圍}
 與其他章節有所重複，請參考文件1.1。
@@ -168,6 +184,21 @@
 \chapter{總體描述}
 
 \section{產品透視} %+一張圖，%components diagram
+
+本產品的產品透視圖，如圖\ref{fig:tracy}所示，本產品分為兩部分，第一部分為即時情緒辨識與緩和機制，如圖\ref{fig:tracy}上半部所示；第二部分為心靈陪伴分析平台，如圖\ref{fig:tracy}下半部。
+
+在第一部分：即時情緒辨識與緩和機制，我們會先對使用者臉部進行偵測，得到使用者目前情緒，再根據使用者當前情緒去找可以緩和使用者的正能量小語及音樂，播放給使用者聆聽，讓使用者達到情緒緩和的效果；而第二部分：心靈陪伴分析平台，我們會提供使用者專用的網頁，網頁中提供使用者的情緒數據，給使用者去查看情緒分析統計結果，藉此了解、調適個人心理狀態，輔助使用者情緒達到穩定，使病情能更快速康復。
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=.85\textwidth]{./figs/diagrams/tracy.pdf}
+\end{center}
+\vspace{-0.9cm}
+\caption{產品透視圖。}
+\label{fig:tracy}
+\end{figure}
+
+
 %$<$Describe the context and origin of the product being specified in this SRS.  
 %For example, state whether this product is a follow-on member of a product 
 %family, a replacement for certain existing systems, or a new, self-contained 
@@ -176,18 +207,42 @@
 %identify interfaces between the two. A simple diagram that shows the major 
 %components of the overall system, subsystem interconnections, and external 
 %interfaces can be helpful.$>$
-
-\section{產品功能} %class diagram
+\newpage
+\section{產品功能} %component diagram
 %$<$Summarize the major functions the product must perform or must let the user 
 %perform. Details will be provided in Section 3, so only a high level summary 
 %(such as a bullet list) is needed here. Organize the functions to make them 
 %understandable to any reader of the SRS. A picture of the major groups of 
 %related requirements and how they relate, such as a top level data flow diagram 
 %or object class diagram, is often effective.$>$
-%本系統主要是針對病人去做情緒偵測，並且當下立即利用播放音樂、回應話去舒緩病人的非正向情緒，每一次的情緒都會儲存在後端的database裡面，病人可以透過我們心靈陪伴分析平台網頁，去了解自己每天的情緒和全部的情緒統計，搭配貼心小建議可以更清楚需要注意的身體狀況。另外，我們還設置留言板供用戶可以抒發或者分享自己的心情，所有內容一律保密，不會外流，請用戶放心。
+本產品主要功能為提供使用者即時情緒辨識與緩和機制，以及心靈陪伴分析平台。如圖\ref{fig:UserAndServer}所示，本產品系統主要分為兩個部分，分別為使用者端的即時情緒辨識與緩和機制，以及伺服器端的心靈陪伴分析平台。
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/diagrams/UserAndServer.pdf}
+\end{center}
+\caption{系統架構圖。}
+\label{fig:UserAndServer}
+\end{figure}
+
+為了達到上述功能，團隊將本產品分為多個元件(component)實行，而各元件相互關係如圖\ref{fig:ComponentDiagram}所示，依據系統兩部分來說明。
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/diagrams/ComponentDiagram.pdf}
+\end{center}
+\caption{系統元件架構圖。}
+\label{fig:ComponentDiagram}
+\end{figure}
+
+對於使用者端而言，如圖\ref{fig:ComponentDiagram}的藍色區塊所示，為了即時緩和使用者情緒，我們使用Detect、Model、Crawler以及database等四個元件來呈現，由Detect元件偵測使用者目前的情緒，再經由Model元件來分析其情緒類別，並將其結果傳至database，最後以Crawler元件來播放音樂，達到緩和使用者情緒的目標。
+
+對於伺服器端而言，如圖\ref{fig:ComponentDiagram}的綠色區塊所示，為了清楚呈現使用者的歷史情緒紀錄，我們使用Chart、HappyIndex、Most Unhappy Detection、Suggestion Photo等四個元件來呈現，讓使用者了解自己每天的情緒和全部的情緒統計，搭配貼心小建議可以更清楚需要注意的身體狀況。除此之外，還有使用Chat元件，設置留言板供用戶可以抒發或者分享自己的心情。
+
+
 
 \section{用戶類別和特質}
-我們的系統用戶，針對正在接受治療的病人，如︰憂鬱症、癌症等，利用攝影機拍攝病人的臉部影像，辨識是否處於非正向情緒，如︰焦慮、憤怒等，播放語音回應及線上音樂，緩和病人情緒，並且可利用心靈陪伴分析平台網頁，網頁中提供病人的情緒數據、建議事項及心情留言板，藉此了解、調適個人心理狀態，輔助病人情緒達到穩定，使病情能更快速康復。
+我們的產品用戶，主要針對正在接受治療的病人，如︰憂鬱症、癌症等，利用攝影機拍攝病人的臉部影像，辨識是否處於非正向情緒，如︰焦慮、憤怒等，播放正能量小語及線上音樂，緩和病人情緒，並且可以利用心靈陪伴分析平台網頁去做後續追蹤，網頁中提供病人的情緒數據、建議事項及心情留言板，藉此了解、調適個人心理狀態，輔助病人情緒達到穩定，使病情能更快速康復。
 %$<$Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class.  Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.$>$
 
 \section{操作環境}
@@ -207,7 +262,7 @@
 \begin{itemize}
 \item[(1)]{\begin{bfseries}{音響：}外接藍芽喇叭或電腦內建喇叭\end{bfseries}}
 \item[(2)]{\begin{bfseries}{攝影鏡頭：}USB2.0外接攝影鏡頭或電腦內建鏡頭\end{bfseries}}
-\item[(3)]{\begin{bfseries}{網路：}無線網路卡或手機 wifi\end{bfseries}}
+\item[(3)]{\begin{bfseries}{網路：}無線網路卡或 wifi\end{bfseries}}
 \end{itemize}
 
 \section{設計和實作上的限制}
@@ -218,9 +273,34 @@
 用戶文件與資訊，請參閱本文件的第3部份，介面規格設計。
 %$<$List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.$>$
 \section{系統假設和依賴}
+本產品做出以下假設 :
 
-本產品使用的套件包含：NumPy、OpenCV、Tensorflow、Keras、BeautifulSoup、
-youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第三方套件停止服務時，我們的程式將無法運行。
+1. 使用的套件包含：
+
+\begin{center}  
+\begin{tabular}{|p{5cm}|p{5cm}|}\hline
+套件 & 版本   \\ \hline  
+NumPy&1.14.2\\ \hline  
+OpenCV&3.4.0.12\\ \hline
+Tensorflow&1.4.0\\ \hline
+Keras&2.1.5\\ \hline
+BeautifulSoup&4.6.0\\ \hline
+youtube_dl&2018.3.26.1\\ \hline
+lxml&4.2.1\\ \hline
+pymongo&3.6.1\\ \hline
+urllib&1.22\\ \hline
+json&2.0.9\\ \hline
+django&2.0.4\\ \hline
+\end{tabular}  
+\end{center}  
+
+2. 使用者的電腦有內建鏡頭或能外接鏡頭。
+
+3. 使用者的電腦有內建喇叭或能外接喇叭。
+
+4. 使用者所在的環境能夠連上網路。
+
+若以上假設不正確、不一致或被更改，就會使系統受到影響。
 
 %$<$List any assumed factors (as opposed to known facts) that could affect the 
 %requirements stated in the SRS. These could include third-party or commercial 
@@ -255,7 +335,7 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 \label{fig:UserInterface-1}
 \end{figure}
 
-在偵測完使用者的情緒後，我們透過網頁的形式，呈現情緒數據的直方圖，提供給病人查看，另外，網頁下方也提供貼心小建議與留言板，提醒病人注意心理狀態，以及讓病人留言抒發情緒，如圖\ref{fig:UserInterface-2}所示。
+在偵測完使用者的情緒後，我們透過網頁的形式，呈現情緒數據的直方圖，提供給使用者查看，另外，網頁下方也提供貼心小建議與留言板，提醒使用者注意心理狀態，以及讓使用者留言抒發情緒，如圖\ref{fig:UserInterface-2}所示。
 
 \begin{figure}[!h]
 \begin{center}
@@ -289,9 +369,51 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 %sharing mechanism must be implemented in a specific way (for example, use of a 
 %global data area in a multitasking operating system), specify this as an 
 %implementation constraint.$>$
-軟體的架構, 功能列表, 變數與函數的列表說明.
+關於軟體介面的部分，我們分為使用者端以及伺服器端來做細部說明，對於使用者端而言，如圖\ref{fig:client-ClassDiagram}所示，主要架構包括藍色區塊的五個class架構，以及橘色區塊的兩個database。
 
-\section{通信介面} %這可刪嗎？沒用到
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=.8\textwidth]{./figs/diagrams/class/client-ClassDiagram.pdf}
+\end{center}
+\vspace{-1cm}
+\caption{使用者端 - ClassDiagram。}
+\label{fig:client-ClassDiagram}
+\end{figure}
+
+首先，是左上角的BuildAlgorithm class，其中，裡面包含dataset以及network兩個attributes，以及train、test、evaluation等三個operation，關於attributes的部分，我們使用dataset存放訓練集以及測試集的圖片，而network則是存放網路架構；關於operation的部分，我們使用train、test來訓練、測試資料集，並搭配evaluation來評估網路模型的準確度。
+
+再來是Detect class，主要的功能為擷取鏡頭前畫面、載入已訓練完成的model、對分析後的結果進行投票、回應使用者的情緒、以及畫分析結果圖在介面上。其中，會使用到EmotionRecognition class來載入分析情緒所需要用的model，以及Crawler class來搜尋與播放音樂。
+
+而針對跟database的互動則是採用getcollection class，為了將分析後的情緒上傳至database，我們採用getcollection做為橋樑，其中包含IP、port、account、password、req等五個attributes，透過IP、port、account、password來連結資料庫，而req則是代表是哪個database或collection，我們會將偵測結果上傳至Open database底下的record collection，而為了查詢偵測分析後結果所對應的相關音樂，我們查詢Musicky這個database底下的test collection。\\
+
+對於伺服器端而言，如圖\ref{fig:server-ClassDiagram}所示，主要架構包括紫色區塊的login架構、綠色區塊的summary架構、藍色區塊回應網頁所需之架構、以及橘色區塊的database架構。
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=.8\textwidth]{./figs/diagrams/class/server-ClassDiagram.pdf}
+\end{center}
+\vspace{-1cm}
+\caption{伺服器端 - ClassDiagram。}
+\label{fig:server-ClassDiagram}
+\end{figure}
+
+首先，是左上角的紫色區塊login架構，當載入Login.html頁面後，會依據使用者所輸入的account、password，並使用sign_in function以確保該用戶存在，並回傳Summary.html頁面，讓使用者開始查看其歷史情緒資訊。
+
+為了提供使用者查看歷史情緒資訊，如綠色區塊所示，對於summary.html頁面，我們以chartTotal、chartDaily來呈現累計統計以及當日統計直方圖表，以happy_total、happy_daily來呈現累計統計以及當日統計開心指數，以
+unhappy_total、unhappy_daily來呈現累計統計以及當日統計最常出現的非正向情緒，以photo來呈現貼心小建議。另外，以comments、suggest以及mybtn等attributes儲存留言板的相關資訊。
+
+在頁面的顯示上是由summary.html透過發出要求，在Views.py接收並處理，最後顯示在頁面上，而主要呈現分為兩個class做處理，Rec class以及Chat class。
+
+
+對於Rec class的部份主要處理：直方圖表、開心指數、最常出現的非正向情緒、貼心小建議等資訊，而這些所需之資訊都是存放在Open database中的record collection。透過Rec class對Views.py發出要求後，在Views.py中的Getvoting class會連接database取得record資料，並使用statistic function，將取得的資料進行統計後，回傳給Rec class將其顯示在頁面上。
+
+對於Chat class的部份主要為處理留言板，透過Chat class對Views.py發出要求後，在Views.py中的Getchat class會連接database取得contact資料，將取得的資料依據時間排序後，回傳給Chat class將其顯示在頁面上，使用者便能看到其之前所寫的所有記錄。
+
+另外，summary.html上有提供使用者向留言板留言的功能，因此當使用者在網頁上留言後，按下mybtn即可將留言的內容(suggest)傳送至Views.py的summary class，將留言以及留言當下的時間使用insertContact function，存入Open database中contact collection內，並使用render function重新載入summary.html頁面，更新頁面資訊。
+
+
+
+\section{通信介面} %這可刪嗎？沒用到 structural diagram
 %$<$Describe the requirements associated with any communications functions 
 %required by this product, including e-mail, web browser, network server 
 %communications protocols, electronic forms, and so on. Define any pertinent 
@@ -299,42 +421,87 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 %as FTP or HTTP. Specify any communication security or encryption issues, data 
 %transfer rates, and synchronization mechanisms.$>$
 
-\chapter{系統功能}
-根據國內〈科學發展〉期刊的相關研究發現，音樂可以產生催產素，以減低焦慮與恐懼，有效改善情緒，因此，本系統：基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制，本專案系統主要分為兩部份，分別為使用者端和伺服器端，使用者端為即時分析情緒及情緒緩和，包含情緒偵測演算法及情緒緩和機制，伺服器端則為後端平台做分析追蹤，包含心靈陪伴分析平台，如圖\ref{fig:framework}，概略說明如下：
+本產品之通信界面結構圖，如圖\ref{fig:StructuralDiagram}所示，所有元件均架設在主要的三個server上，包含：web Server、Application Server、DB Server。
 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=.78\textwidth]{./figs/diagrams/StructuralDiagram.pdf}
+\end{center}
+\vspace{-0.5cm}
+\caption{系統之結構圖。}
+\label{fig:StructuralDiagram}
+\end{figure}
+
+對於web Server而言，為了要提供伺服器端所需之網頁頁面，團隊採用Django架構，透過web Server(Django:templates)對Application Server(Django:views)的溝通，來呈現網頁所需之界面元件。
+
+對於Application Server而言，除了回應伺服器端的web Server請求外，也提供使用者端整套系統的服務(Detect Emotion System)。在伺服器端(Django:views)，為了能提供web Server呈現畫面的元件，除了連接DB Server以取得所需資料外，也會在此做統計分析；在使用者端(Detect Emotion System)，為了能提供完善的系統服務，我們會先偵測使用者的情緒，並將情緒偵測結果存入DB Server，再利用情緒偵測結果，到資料庫中的關鍵字查找表，對應並抓取緩和情緒之關鍵字，接著利用網路網路爬蟲，搜尋並下載能有效緩和使用者當下情緒的音樂。
+
+對於DB Server而言，除了存放抓取緩和情緒之關鍵字所需的查表外(Musicky)，也存放偵測結果與時間。另外，也存放使用者在伺服器端頁面所輸入的留言(Open)。
+
+%最左邊的為網頁端(web Server)，網頁端呈現需要連接系統主體架構(Application Sever)，系統主體架構含有使用者端(Emotion Control System)及伺服器端(Django:views)，使用者端(Detect Emotion System)與資料庫端(DB Server)做連結；伺服器端(Django:views)則分別與資料庫端(DB Server)及網頁端(web Server)做連結，使用者端(Detect Emotion System)會先偵測使用者的情緒，並將情緒偵測結果存入資料庫端(DB Server)，再利用情緒偵測結果，到資料庫中的關鍵字查找表，對應並抓取緩和情緒之關鍵字，接著利用網路網路爬蟲，搜尋並下載能有效緩和使用者當下情緒的音樂。而伺服器端(Django:views)則會抓取資料庫之情緒偵測結果，累計各種情緒類別並利用直方圖呈現於網頁端(webserver)上。
+
+
+\chapter{系統功能}
+根據國內〈科學發展〉期刊的相關研究發現，音樂可以產生催產素，以減低焦慮與恐懼，有效改善情緒，因此，本產品：基於即時情緒分析之心靈陪伴系統，應用於醫療系統的照護病患機制。本產品系統主要分為兩部份，分別為使用者端和伺服器端，使用者端為即時情緒辨識與緩和機制，包含情緒偵測演算法及情緒緩和機制，伺服器端則為心靈陪伴分析平台，如圖\ref{fig:framework}。
 %%%%圖要改
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=1\textwidth]{./figs/framework-version2.pdf}
 \end{center}
-\caption{非接觸式準確且即時駕駛情緒偵測演算法架構圖。}
+\vspace{-0.5cm}
+\caption{基於即時情緒分析之心靈陪伴系統架構圖。}
 \label{fig:framework}
 \end{figure}
 
+\vspace{-1cm}
+
 \section{使用者端}
 
-\subsection{即時分析情緒及情緒緩和}
+\subsection{即時情緒辨識與緩和機制}
 
 
 \begin{itemize}
-\item{\begin{bfseries}{情緒偵測演算法：}\end{bfseries}}我們為避免病人因非正向情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，由1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層所構成，來訓練情緒辨識模型，偵測病人情緒。由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
+\item{\begin{bfseries}{情緒偵測演算法：}\end{bfseries}}我們為了使病人能夠保持正向情緒使恢復更快速，以及避免病人因非正向情緒，持續影響心理、生理，進而導致不可預期的危害，我們利用深度學習的卷積神經網路CNN，如圖\ref{fig:framework-version3}所示，來訓練情緒辨識模型，偵測病人情緒。其中包含1個輸入層、6個卷積層(Convolution layer)、3個池化層(Pooling layer)、1個全連接層(Fully Connected)和1個輸出層。且由於情緒的時間性變化，我們亦進行兩階段的Voting機制，第一階段為篩選出病人可能的情緒，第二階段為避免病人因為短時間臉部抽動（如：打哈欠），導致誤判情緒，透過上述兩階段的Voting後，得出最準確的病人情緒判斷。\\
 
-\item{\begin{bfseries}{情緒緩和機制：}\end{bfseries}}透過情緒偵測演算法，得出的病人情緒後，即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因非正向情緒，導致影響心理，使病情不易痊癒、影響治療過程。因此，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
+\vspace{-0.9cm}
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/framework-version3.pdf}
+\end{center}
+\vspace{-0.5cm}
+\caption{使用者端︰情緒偵測演算法。}
+\label{fig:framework-version3}
+\end{figure}
+
+\vspace{-0.5cm}
+\item{\begin{bfseries}{情緒緩和機制：}\end{bfseries}}透過情緒偵測演算法，得出的病人情緒後，先播放正能量小語，再即時抓取能有效改善病人當下情緒的音樂並播放，使病人情緒緩和，避免病人因非正向情緒而影響心理，使病情不易痊癒或影響治療過程。因此，如圖\ref{fig:FrameworkSecond}所示，我們分為五個步驟達成，包括：搜索文字、關鍵字合成、網路爬蟲、音訊生成、以及音樂播放等五個步驟。
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=.9\textwidth]{./figs/FrameworkSecond.pdf}
+\end{center}
+\vspace{-0.5cm}
+\caption{使用者端︰情緒緩和機制。}
+\label{fig:FrameworkSecond}
+\end{figure}
+
+\vspace{-0.5cm}
 \begin{itemize}
 \item[(a)]{\begin{bfseries}{搜索文字：}\end{bfseries}}
 
-如圖\ref{fig:FrameworkFirstAndSecond}右半部(a)，當抓取到病人情緒後，我們隨機搜索一組預先設定的回應文字，如表\ref{lab:searchtext}所示，利用語音播放，回應正向語句，鼓勵病人。
+如圖\ref{fig:FrameworkSecond}(a)，當抓取到病人情緒後，我們隨機搜索一組預先設定的回應文字，如表\ref{lab:searchtext}所示，利用語音播放，回應正能量小語，鼓勵病人。這些正能量小語我們是使用經過專家證實能夠有效緩和病人情緒的文字，因此這些專業的正能量小語能夠使病人擺脫非正向情緒。
 
-\renewcommand{\arraystretch}{1.0} 
+\renewcommand{\arraystretch}{0.9} 
 \renewcommand{\multirowsetup}{\centering}
 
+\vspace{-0.5cm}
 \begin{table}[h]
 \caption{搜索文字表}
     \centering
 \begin{tabular}{|*{4}{r|}}
 \hline
 \multicolumn{1}{|c|}{情緒}
-& \multicolumn{3}{c|}{回應字} \\\hline
+& \multicolumn{3}{c|}{正能量小語} \\\hline
 \multicolumn{1}{|c}{憤怒}&\multicolumn{1}{|c}{奧特曼，你別氣了，…}&\multicolumn{1}{|c}{……}&\multicolumn{1}{|c|}{沒有什麼事情是十全…} \\\hline
 \multicolumn{1}{|c}{悲傷}&\multicolumn{1}{|c}{讓我陪你一起面對，…}&\multicolumn{1}{|c}{……}&\multicolumn{1}{|c|}{我知道現在的你情緒…} \\\hline
 \multicolumn{1}{|c}{驚嚇}&\multicolumn{1}{|c}{偉大的哈利來幫你了…}&\multicolumn{1}{|c}{……}&\multicolumn{1}{|c|}{你心裡一定很不好受…}\\\hline
@@ -348,7 +515,7 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 
 \item[(b)]{\begin{bfseries}{關鍵字合成：}\end{bfseries}}
 
-我們根據設定的查找表(Lookup Table)來合成網路爬蟲關鍵字，如表\ref{lab:2}所示（放關鍵字合成的表）。其中，如果是偵測到病人的情緒為「憤怒」，會查找到可能的關鍵字有「古典樂放鬆」、「古典樂輕快」、「流行歌輕快」等，以找尋放鬆、輕快的音訊資料，如圖\ref{fig:FrameworkFirstAndSecond}右半部(b)所示。
+我們根據設定的查找表(Lookup Table)來合成網路爬蟲關鍵字，如表\ref{lab:2}所示。其中，如果是偵測到病人的情緒為「憤怒」，會查找到可能的關鍵字有「古典樂放鬆」、「療癒音樂」、「流行歌輕快」等，以找尋放鬆、療癒、輕快的音訊資料，如圖\ref{fig:FrameworkSecond}(b)所示。在關鍵字中，我們還添加了一些經過英國醫療團隊證實能夠舒緩情緒的歌單，因此使用者不只能聽到動人心弦的音樂，還能有效地緩和非正向情緒。
 
 \renewcommand{\arraystretch}{1.0} 
 \renewcommand{\multirowsetup}{\centering}
@@ -359,8 +526,8 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 \hline
 \multicolumn{1}{|c|}{情緒}
 & \multicolumn{3}{c|}{關鍵字} \\\hline
-\multicolumn{1}{|c}{憤怒}&\multicolumn{1}{|c}{古典樂放鬆}&\multicolumn{1}{|c}{古典樂輕快}&\multicolumn{1}{|c|}{流行歌輕快} \\\hline
-\multicolumn{1}{|c}{悲傷}&\multicolumn{1}{|c}{療癒音樂}&\multicolumn{1}{|c}{交響樂輕快}&\multicolumn{1}{|c|}{交響曲振奮} \\\hline
+\multicolumn{1}{|c}{憤怒}&\multicolumn{1}{|c}{古典樂放鬆}&\multicolumn{1}{|c}{療癒音樂}&\multicolumn{1}{|c|}{流行歌輕快} \\\hline
+\multicolumn{1}{|c}{悲傷}&\multicolumn{1}{|c}{古典樂輕快}&\multicolumn{1}{|c}{交響樂輕快}&\multicolumn{1}{|c|}{交響曲振奮} \\\hline
 \multicolumn{1}{|c}{驚嚇}&\multicolumn{1}{|c}{鋼琴輕音樂}&\multicolumn{1}{|c}{背景音樂輕鬆}&\multicolumn{1}{|c|}{背景音樂抒情}\\\hline
 \multicolumn{1}{|c}{厭惡}&\multicolumn{1}{|c}{純音樂提神}&\multicolumn{1}{|c}{交響樂震撼}&\multicolumn{1}{|c|}{背景音樂震撼}\\\hline
 \multicolumn{1}{|c}{焦慮}&\multicolumn{1}{|c}{古典樂振奮}   &\multicolumn{1}{|c}{舒緩音樂}   &\multicolumn{1}{|c|}{振奮人心音樂}\\\hline
@@ -372,33 +539,69 @@ youtube_dl、lxml、ffmpeg、pymongo、urllib、json、django，因此，當第�
 
 \item[(c)]{\begin{bfseries}{網路爬蟲：}\end{bfseries}}
 
-利用關鍵字合成，使用網路爬蟲，抓取有效改善病人當下情緒的音樂，我們採用HTTP Request技術，以及requests、urllib2、 BeautifulSoup 、lxml、 youtube-dl等軟體開發套件，根據上述的關鍵字檢索結果，從網絡上抓取最新最即時的音訊資料，如圖\ref{fig:FrameworkFirstAndSecond}右半部(c)所示。
+利用關鍵字合成，使用網路爬蟲，抓取有效改善病人當下情緒的音樂，我們採用HTTP Request技術，以及requests、urllib2、 BeautifulSoup 、lxml、 youtube-dl等軟體開發套件，根據上述的關鍵字檢索結果，從網絡上抓取最新最即時的音訊資料，如圖\ref{fig:FrameworkSecond}(c)所示。
 
 \item[(d)]{\begin{bfseries}{音訊生成：}\end{bfseries}}
 
-當我們抓取到音訊資料後，通過Python的Requests及 BeautifulSoup技術，來下載檔案，使音訊生成，如圖\ref{fig:FrameworkFirstAndSecond}右半部(d)所示。
+當我們抓取到音訊資料後，通過Python的Requests及 BeautifulSoup技術，來下載檔案，使音訊生成，如圖\ref{fig:FrameworkSecond}(d)所示。
 
 \item[(e)]{\begin{bfseries}{音樂播放：}\end{bfseries}}
 
-當我們生成音訊資料後，使用omxplayer套件，將音訊播放給病人收聽，改善病人當下的情緒，如圖\ref{fig:FrameworkFirstAndSecond}右半部(e)所示。
+當我們生成音訊資料後，使用omxplayer套件，將音訊播放給病人收聽，改善病人當下的情緒，如圖\ref{fig:FrameworkSecond}(e)所示。
 
 \end{itemize}
 
 根據以上五個步驟，即可完成情緒緩和機制，藉此避免病人因非正向情緒，導致影響病情，賦予病人積極、正面的動力。
 \end{itemize}
 
+
+
+\subsection{使用案例圖} %user diagram
+
+使用者端︰即時情緒辨識與緩和機制的User Diagram，如圖\ref{fig:client-UserDiagram}所示，包含六個步驟，概略說明如下︰
+
+
+%\begin{itemize}
+%\item[1.]{\begin{bfseries}即時分析情緒及情緒緩和︰\end{bfseries}}
+%\end{itemize}
+
+首先，在Main/Emotion.py，團隊使用攝影鏡頭，偵測病人臉部，再利用兩階段投票機制，得出病人情緒(emotion)。
+
+第二步驟分為兩部份，第一部份，在得到病人情緒及使用日期後(emotion, time)，存入Database，做進一步的網頁應用（參考文件4.2）；第二部份，將病人情緒(emotion)傳送至Crawler.py，以便搜尋情緒相對應的關鍵字(Keyword)。
+
+第三、四步驟，利用第二步驟第二部份，得到的病人情緒(emotion)，進入Database隨機取出一組情緒相對應的關鍵字(Keyword)，並將得到的關鍵字(Keyword)傳回Crawler.py。
+
+第五步驟，利用關鍵字(Keyword)合成URL，將URL透過Browser來查詢相關音樂。
+
+第六步驟分為兩個部份，第一部份，透過剛剛得到的URL進行網路爬蟲，從中下載適當的音樂，並播放音樂(play.mp3)；第二部份，在播放音樂的同時，繼續偵測病人情緒，等待一首音樂結束後，播放下一次情緒的音樂。
+
+%\begin{itemize}
+%\item[1.   ]{\begin{bfseries}{Detect︰}\end{bfseries}}利用攝影鏡頭，偵測病人臉部，利用兩階段投票機制，得出病人情緒(emotion)，將情緒放入``Main/Emotion.py''。
+%
+%\item[2-1.]{\begin{bfseries}{Insert to record︰}\end{bfseries}}我們將取出病人情緒、辨識日期(emotion, time)，存入Database，做進一步的網頁應用（參考文件4.2）。
+%\item[2-2.]{\begin{bfseries}{Search and play music︰}\end{bfseries}}將病人情緒(emotion)傳送至``Crawler.py''，以便搜尋情緒相對應的關鍵字(Keyword)。
+%\item[3.   ]{\begin{bfseries}{Search Keyword︰}\end{bfseries}}利用2-2得到的病人情緒(emotion)，進入Database隨機取出一組情緒相對應的關鍵字(Keyword)。
+%
+%\item[4.   ]{\begin{bfseries}{ACK︰}\end{bfseries}}將得到的關鍵字(Keyword)傳回Crawler.py。
+%
+%\item[5.   ]{\begin{bfseries}{Download︰}\end{bfseries}}利用關鍵字(Keyword)合成URL，將URL傳送至``Browser.py''。
+%
+%\item[6-1.]{\begin{bfseries}{Play music︰}\end{bfseries}}透過URL進行網路爬蟲，找到適當的音樂並且下載，並在``Crawler.py''播放音樂(play.mp3)。
+%\item[6-2.]{\begin{bfseries}{Continue to detect︰}\end{bfseries}}在播放音樂的同時，繼續偵測病人情緒，等待一首音樂結束後，播放下一次情緒的音樂。
+%\end{itemize}
+
+%$<$List the sequences of user actions and system responses that stimulate the 
+%behavior defined for this feature. These will correspond to the dialog elements 
+%associated with use cases.$>$
+
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=1\textwidth]{./figs/FrameworkFirstAndSecond.pdf}
+\includegraphics[width=1\textwidth]{./figs/diagrams/user/client-UserDiagram.pdf}
 \end{center}
-\caption{使用者端︰情緒偵測演算法與情緒緩和機制架構圖。}
-\label{fig:FrameworkFirstAndSecond}
+\vspace{-0.5cm}
+\caption{使用者端︰UserDiagram。}
+\label{fig:client-UserDiagram}
 \end{figure}
-
-\subsection{使用案例圖}
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
 
 \subsection{功能性需求}
 
@@ -406,38 +609,41 @@ associated with use cases.$>$
 \begin{tabular}{|l| p{10cm}|}  
 \hline  
 功能性需求 & 功能性需求描述   \\ \hline  
-情緒辨識 &以本系統介面偵測病人臉部表情，偵測7種表情，包含6種非正向情緒，如︰憂鬱、悲傷、憤怒、面無表情、厭惡、驚嚇等，及1種正向情緒，如︰開心。    \\ \hline  
-搜索文字& 好的\\\hline
-關鍵字合成 & 抓取到病人情緒後，根據設定的查閱表資料表，合成網路爬蟲關鍵字。例如：偵測到病人的情緒為憤怒，會查找到可的關鍵字有..「古典樂放鬆」、「古典樂輕快」、「流行歌輕快」等，以找尋放鬆、輕快的音訊資料    \\ \hline  
-網路爬蟲 & 利用情緒關鍵字，抓取有效改善病人當下情緒的音樂 \\ \hline
-音訊生成 & 抓取音訊資料後下載檔案，使音訊生成 \\ \hline
-音樂播放 & 生成音訊後，將音訊播放給病人收聽，改善病人當下的情緒 \\ \hline
+情緒辨識 &以本產品介面偵測病人臉部表情，偵測7種表情，包含6種非正向情緒︰憂鬱、悲傷、憤怒、面無表情、厭惡、驚嚇，及1種正向情緒︰開心。    \\ \hline  
+搜索文字&當抓取到病人情緒後，我們隨機搜索一組預先設定的回應文字，利用語音播放，回應正能量小語，鼓勵病人。\\\hline
+關鍵字合成 & 抓取到病人情緒後，根據設定的查閱表資料表，合成網路爬蟲關鍵字。例如：偵測到病人的情緒為憤怒，會查找到可的關鍵字有「古典樂放鬆」、「古典樂輕快」、「流行歌輕快」等。    \\ \hline  
+網路爬蟲 & 利用情緒關鍵字，抓取有效改善病人當下情緒的音樂。 \\ \hline
+音訊生成 & 抓取音訊資料後下載檔案，使音訊生成。 \\ \hline
+音樂播放 & 生成音訊後，將音訊播放給病人收聽，改善病人當下的情緒。 \\ \hline
 
 \end{tabular}  
 \end{center}  
 
 
 \section{伺服器端}
-
-\subsection{後端平台做分析追蹤}
+\subsection{心靈陪伴分析平台}
 \begin{itemize}
-\item{\begin{bfseries}{心靈陪伴分析平台：}\end{bfseries}}透過即時分析情緒及情緒緩和後，我們透過分析後的非正向情緒，設計一心靈陪伴分析平台，如圖\ref{fig:FrameworkThird}所示，提供視覺化的情緒統計服務。如此一來，病人可以透過網頁，查看情緒分析統計結果，以及自己經常處於哪一別類的非正向情緒，藉此了解、調適個人心理狀態。
+\item{\begin{bfseries}{心靈陪伴分析平台：}\end{bfseries}}即時分析情緒及情緒緩和後，我們利用分析後的非正向情緒，設計一心靈陪伴分析平台，如圖\ref{fig:FrameworkThird}所示，提供視覺化的情緒統計服務。提供病人去網頁查看情緒分析統計結果，以及自己經常處於哪一類別的非正向情緒，藉此了解、調適個人心理狀態。
 
+\vspace{-0.3cm}
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{./figs/FrameworkThird.pdf}
+\includegraphics[width=0.5\textwidth]{./figs/FrameworkThird.pdf}
 \end{center}
+\vspace{-0.5cm}
 \caption{伺服器端：心靈陪伴分析平台架構圖。}
 \label{fig:FrameworkThird}
 \end{figure}
 \end{itemize}
 
+
+\newpage
 \begin{itemize}
 \item[(a)]{\begin{bfseries}{情緒數據統計：}\end{bfseries}}如圖\ref{fig:FrameworkThird}(a)所示，我們將統計各非正向情緒類別的結果，存入雲端伺服器，再經由雲端伺服器取出非正向情緒等資訊，分析、統整資訊。
 
-\item[(b)]{\begin{bfseries}{心靈分析平台網頁：}\end{bfseries}}如圖\ref{fig:FrameworkThird}(b)所示，我們以直方圖與簡單文字，將使用者的累計、當日的非正向情緒類別比例、正向情緒比例、最常出現的非正向情緒，呈現於網頁平台，如圖\ref{fig:WebInterface}所示，如此一來，使用者不僅能在情緒不穩的情況下，立即收聽線上音樂，舒緩情緒，也能透過網頁，查看非正向情緒類別的統計資訊。另外，我們提供貼心小建議與留言板，貼心小建議會以文字方式顯示，讓使用者知道非正向情緒可能導致的疾病，提醒使用者調適情緒。留言板提供使用者抒發情緒、分享心情，而留言內容將存入雲端伺服器。
+\item[(b)]{\begin{bfseries}{心靈分析平台網頁：}\end{bfseries}}如圖\ref{fig:FrameworkThird}(b)所示，我們以直方圖與簡單文字，將使用者的累計、當日的非正向情緒類別比例、正向情緒比例、最常出現的非正向情緒，呈現於網頁平台，如圖\ref{fig:WebInterface}所示。另外，我們提供貼心小建議與留言板，貼心小建議會以文字方式顯示，讓使用者知道非正向情緒可能導致的疾病，提醒使用者調適情緒。留言板提供使用者抒發情緒、分享心情，而留言內容將存入雲端伺服器。
 
-\item[(c)]{\begin{bfseries}{分析留言調整回應字：}\end{bfseries}}如圖\ref{fig:FrameworkThird}(c)所示，將留言版的留言內容，存入雲端伺服器後，我們會查看並分析使用者的留言內容，並適時調整回應字與關鍵字。
+\item[(c)]{\begin{bfseries}{分析留言調整回應字：}\end{bfseries}}如圖\ref{fig:FrameworkThird}(c)所示，將留言板的留言內容，存入雲端伺服器後，我們會查看並分析使用者的留言內容，並適時調整回應字與關鍵字。
 \end{itemize}
 
 根據以上三個步驟，建立心靈陪伴分析平台，藉此避免病人因非正向情緒，導致影響病情，賦予病人積極、正面的動力。\\
@@ -454,10 +660,51 @@ associated with use cases.$>$
 %component ratings, such as benefit, penalty, cost, and risk (each rated on a 
 %relative scale from a low of 1 to a high of 9).$>$
 
-\subsection{使用案例圖}
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
+\subsection{使用案例圖}%server diagram
+%$<$List the sequences of user actions and system responses that stimulate the 
+%behavior defined for this feature. These will correspond to the dialog elements 
+%associated with use cases.$>$
+
+伺服器端︰心靈陪伴分析平台的User Diagram，我們將使用者動作分為兩種，第一種為登入網頁查看資訊，共九個步驟，如圖\ref{fig:server-UserDiagram}白色區塊所示；第二種為使用者於留言板輸入留言，共四個步驟，如圖\ref{fig:server-UserDiagram}橘色區塊所示，概略說明如下︰
+
+\begin{itemize}
+\item[1.]{\begin{bfseries}登入網頁查看資訊︰\end{bfseries}}
+\end{itemize}
+
+首先，當使用者進入我們產品網頁時，引導至登入頁面(Login.html)。
+
+第二步驟，使用者於登入頁面(Login.html)輸入帳號、密碼(account, password)後，在Views.py檢查。
+
+第三步驟，Views.py得到的帳號密碼(account, password)後，進入Database檢查是否有此用戶。
+
+第四步驟分為兩部份，第一部份︰有此用戶，進入第五步驟；第二部份︰若帳號、密碼(account, password)輸入錯誤，將網頁重新導入Login.html，重複第二至第四步驟，直到輸入資料正確，才會進入第五步驟，傳送帳號(account)至summary.html，顯示該用戶的歷史情緒資訊。
+
+第六、七步驟，在summary.html中，我們將利用使用者帳號(account)，向Views.py請求該帳號的情緒數據與留言紀錄；Views.py收到請求(Req)後，向Database請求該帳號(account)的情緒數據與留言紀錄。
+
+第八、九步驟，Database傳送情緒數據與留言紀錄至Views.py，經由Views.py統計分析這些記錄後，回傳請求資料至summary.html，再以視覺化方式呈現於summary.html網頁中。
+
+
+\begin{itemize}
+\item[2.]{\begin{bfseries}留言板輸入留言︰\end{bfseries}}
+\end{itemize}
+
+首先，summary.html中，當使用者按下傳送留言按鈕(mybtn)時，將傳送使用者帳號、留言內容、時間(account, msg, time)至Views.py。
+
+第二步驟，Views.py將使用者帳號、留言內容、時間(account, msg, time)存入Database。
+
+第三步驟，Database成功存入資訊，回傳成功訊息通知Views.py。
+
+第四步驟，summary.html收到成功通之後，將自動導入該使用者帳號(account)的網頁。
+
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/diagrams/user/server-UserDiagram.pdf}
+\end{center}
+\vspace{-0.5cm}
+\caption{伺服器端︰UserDiagram。}
+\label{fig:server-UserDiagram}
+\end{figure}
 
 \subsection{功能性需求}
 \begin{center}  
@@ -466,7 +713,7 @@ associated with use cases.$>$
 功能性需求 & 功能性需求描述   \\ \hline  
 查看情緒分析統計資料 &病人可透過分析整合平台查看過去最常出現分心的非正向情緒，且分別以當日統計、累計統計方式呈現其統計結果。    \\ \hline  
 貼心小建議 &貼心小建議以文字方式呈現，可透過此讓使用者瞭解非正向情緒可能導致的疾病，提醒使用者調適情緒。    \\ \hline
-留言版 &提供使用者抒發情緒及分享心情。    \\ \hline
+留言板 &提供使用者抒發情緒及分享心情。    \\ \hline
 
 \end{tabular}  
 \end{center}  
@@ -476,18 +723,26 @@ associated with use cases.$>$
 
 \section{性能需求}
 
-\begin{center}  
-\begin{tabular}{|l| p{10cm}|}  
-\hline  
-非功能性需求 & 非功能性需求描述   \\ \hline  
-偵測時間 & 情緒偵測應在0.3秒內即時完成    \\ \hline  
-高準確率 & 情緒辨識系統準確率達95\%以上 \\ \hline
-使用方便 &病人可與感測器設備保持30公分以上距離，不需配戴任何裝置，及繁瑣的操作步驟，便能直接蒐集病人的情緒變化，方便實際使用 \\ \hline
-清楚呈現 & 本系統提供之分析整合平台，將雲端資料庫中的數據透過直方圖方式視覺化呈現於網頁上，得以清楚呈現病人非正向情緒之情形 \\ \hline
-隨處皆可察看網頁平台 & 只要身邊有可瀏覽網頁之設備，便可以透過瀏覽器，使用本系統所提供之分析整合平台 \\ \hline
+\begin{itemize}
+\item[1.]{\begin{bfseries}偵測時間快速︰\end{bfseries}}情緒偵測應在0.3秒內即時完成。
+\item[2.]{\begin{bfseries}準確率高︰\end{bfseries}}情緒辨識系統準確率達90\%以上。
+\item[3.]{\begin{bfseries}使用方便、操作簡易︰\end{bfseries}}病人可與感測器設備保持30公分以上距離，不需配戴任何裝置，及繁瑣的操作步驟，便能直接蒐集病人的情緒變化，方便實際使用。
+\item[4.]{\begin{bfseries}網頁呈現淺顯易懂︰\end{bfseries}}本產品提供之分析整合平台，將雲端資料庫中的數據透過直方圖方式視覺化呈現於網頁上，得以清楚呈現病人非正向情緒之情形。
+\item[5.]{\begin{bfseries}隨處皆可查看網頁平台︰\end{bfseries}}只要身邊有可瀏覽網頁之設備（如︰手機、平板、電腦等），便可以透過瀏覽器，使用本產品所提供之分析整合平台。
+\end{itemize}
 
-\end{tabular}  
-\end{center}  
+%\begin{center}  
+%\begin{tabular}{|l| p{10cm}|}  
+%\hline  
+%非功能性需求 & 非功能性需求描述   \\ \hline  
+%偵測時間 & 情緒偵測應在0.3秒內即時完成。    \\ \hline  
+%高準確率 & 情緒辨識系統準確率達90\%以上。 \\ \hline
+%使用方便 &病人可與感測器設備保持30公分以上距離，不需配戴任何裝置，及繁瑣的操作步驟，便能直接蒐集病人的情緒變化，方便實際使用。 \\ \hline
+%清楚呈現 & 本產品提供之分析整合平台，將雲端資料庫中的數據透過直方圖方式視覺化呈現於網頁上，得以清楚呈現病人非正向情緒之情形。 \\ \hline
+%隨處皆可察看網頁平台 & 只要身邊有可瀏覽網頁之設備，便可以透過瀏覽器，使用本產品所提供之分析整合平台。 \\ \hline
+%
+%\end{tabular}  
+%\end{center}  
 
 \section{Safety需求}None.
 %$<$Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.$>$
@@ -496,44 +751,62 @@ associated with use cases.$>$
 %$<$Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.$>$
 
 \section{軟體優良特質}
-目前一般穩定情緒方法有兩種，包含心理諮詢師及親朋好友：
+目前一般穩定情緒方法有兩種，包含親朋好友及心理諮詢師：
 
 \begin{itemize}
-\item[1.]{心理諮詢師：}
+\item[1.]{\begin{bfseries}親朋好友：\end{bfseries}}
+
+在心情不好的情況下，有時會不想和熟悉的人表達、抱怨，因為必須要顧及自己的面子，或者兩人之間朋友圈的重疊導致無法隨心所欲、暢所欲言，反而可能更壓抑自己，無法成功消除自己的非正向情緒；況且，非專業的人士提供的建議不一定是最適合的，且親友會因為沒有得過相同的病，無法感同身受，容易講出風涼話，甚至會導致病人的非正向情緒更為惡劣。
+
+\item[2.]{\begin{bfseries}心理諮詢師：\end{bfseries}}
 
 諮詢師利用專業，在一對一的方式下，引導病人舒緩甚至是消除非正向情緒，並且給予適當的建議，所以價錢上相對來說是非常昂貴的。除此之外，尋求諮詢必須事先預約，導致當下的非正向情緒無法被立即的解決， 會有「非即時性」的問題。
 
-\item[2.]{親朋好友：}
-
-在心情不好的情況下，有時會不想和熟悉的人表達、抱怨，因為必須要顧及自己的面子，或者兩人之間朋友圈的重疊導致無法隨心所欲、暢所欲言，反而可能更壓抑自己，無法成功消除自己的非正向情緒；況且，非專業的人士提供的建議不一定是最適合的，甚至會導致非正向情緒更為惡劣。
-
 \end{itemize}
 
-基於上述兩種穩定情緒方法仍有不足之處，因此，我們提出本系統：基於即時情緒分析之心靈陪伴系統，使用深度學習產生訓練模型，將訓練資料進行情緒特徵抽取，再利用訓練完成的模型偵測病人情緒，獲得改善情緒之關鍵字，即時播放緩和情緒之音樂及心靈小語，舒緩病人非正向情緒。本系統具有以下三點特性：
+基於上述兩種穩定情緒方法仍有不足之處，因此，我們提出本產品：基於即時情緒分析之心靈陪伴系統，使用深度學習產生訓練模型，將訓練資料進行情緒特徵抽取，再利用訓練完成的模型偵測病人情緒，獲得改善情緒之關鍵字，即時播放緩和情緒之音樂及心靈小語，舒緩病人非正向情緒。本產品具有以下三點特性：
 \begin{itemize}
-\item[1.]{專業性：}我們每個回饋、音樂，都是根據研究和專家證實過可以緩和情緒的回應，所以和親朋好友相比，此系統帶給病人情緒上的緩解是更立即且實用的。
+\item[1.]{\begin{bfseries}專業性：\end{bfseries}}我們每個正能量小語、音樂，都是根據研究和專家證實過可以緩和情緒的回應，所以和親朋好友相比，此系統帶給病人情緒上的緩解是更專業且實用的。
 
 
-\item[2.]{ 即時性：}在產生非正向情緒的當下立刻使用本系統，系統可以立即偵測病人的情緒，並且針對此情緒去做適當的回饋，而非像上述方法還需要事先預約，致使情緒不能立即紓解。
+\item[2.]{\begin{bfseries}即時性：\end{bfseries}}在產生非正向情緒的當下立刻使用本產品，系統可以立即偵測病人的情緒，並且針對此情緒去做適當的回饋，而非像上述方法還需要事先預約，致使情緒不能立即紓解。
 
 
-\item[3.] {後續追蹤：}上述提到，諮詢是尋求專業人士的協助，價格昂貴，導致可能久久才能諮詢一次。而使用此系統完全不會有這個問題，非正向情緒產生時，直接打開系統就可以使用，不會限制次數，也沒有價錢上的開銷。
+\item[3.] {\begin{bfseries}後續追蹤：\end{bfseries}}上述提到，諮詢是尋求專業人士的協助，價格昂貴，導致可能久久才能諮詢一次。而使用本產品完全不會有這個問題，非正向情緒產生時，直接打開系統就可以使用，不會限制次數，也沒有價錢上的開銷。
 \end{itemize}
 
-搭配表\ref{lab:1}，可以看出我們的系統同時擁有專業性、即時性和後續追蹤，相較其他兩個穩定情緒的方法我們系統不必花費高昂金額，尋求心理諮商師協助，也不會因顧及面子問題而無法暢所欲言，即可立即且有效緩和情緒。\\
+搭配表\ref{lab:1}，可以看出我們的產品同時擁有專業性、即時性和後續追蹤，相較其他兩個穩定情緒的方法，使用我們產品不會因顧及面子問題而無法暢所欲言，即可立即且有效緩和情緒，也不需要花費高昂金額尋求心理諮商師協助，就能及時緩解非正向情緒以及擁有後續追蹤分析的服務。\\
 
 \renewcommand{\arraystretch}{1.3} % 將表格行間距加大為原來的 1.2 倍
 \begin{table}[!h]    
 \centering
      \caption{各類穩定情緒方法之比較}
- \resizebox{0.48\textwidth}{!}{
+ \resizebox{0.7\textwidth}{!}{
  \begin{tabular}{|c|c|c|c|}\hline
  \diagbox[width=14em]{方法}{特性} & 專業性 & 即時性   &後續追蹤      \\\hline
     心理諮詢師   &○      & ×  & ×      \\\hline
     親朋好友      & ×    & ○  & Δ      \\\hline
-    本系統                       & ○             & ○       & ○        \\\hline
+    本產品                       & ○             & ○       & ○        \\\hline
     \end{tabular}}
 \label{lab:1}
 \end{table}
+
+\chapter{附錄}
+
+\section{結果呈現}
+
+本系統：基於即時情緒分析之心靈陪伴系統的結果呈現，如圖\ref{fig:Emotion}所示，包含六種非正向情緒以及一種正向情緒。
+
+\vspace{1cm}
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figs/Emotion.pdf}
+\end{center}
+%\vspace{-.8cm}
+\caption{結果呈現圖。}
+\label{fig:Emotion}
+\end{figure}
+
+
 
 \end{document}
